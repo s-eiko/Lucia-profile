@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* RESOLUÇÕES PARA TESTAR 
+
+    PC
+    1024 x 768
+    1280 x 720
+    1366 x 768
+    1536 x 864
+    1600 x 900
+    1920 x 1080
+
+    MOBILE
+    360 x 640
+    360 x 800
+    393 x 873
+    412 x 892
+    412 x 915
+    414 x 896
+*/
+
+/* VARIÁVEIS */
+
+:root {
+    --main-text-color: #116A63;
+    --main-background-color: #ffffff;
+    --secondary-background-color: #F8F5F5;
+    --hero-background-color: #e2e2e0;
+    --highlight-color: #D6FFFF;
+    --side-margin: 10px;
+    --main-font-family: "Poppins", sans-serif;
+}
+
+/* RESET */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-background-color);
+}
+
+/* DEFAULT */
+
+* {
+    font-family: var(--main-font-family);
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: var(--main-text-color);
+}
+
+section {
+    align-content: center;
+    text-align: center;
+    padding: 2.7rem 0;
+}
+
+/* CABEÇALHO */
+
+header {
+    padding: 1rem 1rem;
+    background-color: var(--hero-background-color);
+    border-bottom: solid 3px rgb(17, 106, 99, .5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    align-items: right;
+    align-content: right;
+    text-align: right;
+}
+
+header p {
+    display: inline-flex;
+    list-style-type: none;
+    font-size: .95vw;
+    font-weight: 500;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+header p a {
+    text-decoration: none;
+    color: #083632;
+}
+
+header p a:hover {
+    color: #D4AF37;
+}
+
+/* HERO */
+
+#hero {
+    position: relative;
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+    padding: 0;
+}
+
+#hero #hero-background {
+    position: relative;
+    padding-top: 41.67%;
+}
+
+#hero #logo {
+    position: absolute;
+    top: 10px;
+    right: var(--side-margin);
+    width: 23vw;
+}
+
+#hero h2 {
+    position: absolute;
+    font-size: 2.2vw;
+    font-weight: 500;
+    top: 25vh;
+    right: var(--side-margin);
+    text-align: right;
+    color: var(--main-text-color);
+    text-shadow: 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color);
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+}
+
+#hero p {
+    position: absolute;
+    top: 35vh;
+    right: var(--side-margin);
+    width: 50vw;
+    font-size: 1.3vw;
+    font-weight: 500;
+    text-align: right;
+    letter-spacing: -1.2px;
+    color: var(--main-text-color);
+    text-shadow: 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#hero-button {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    top: 55vh;
+    right: var(--side-margin);
+    align-items: center;
+    padding: 13px 30px;
+    gap: 1vw;
+    background-image: linear-gradient(to right, #d4af3700 0%, rgba(212, 175, 55, .65) 10%, rgba(212, 175, 55, .65) 90%, #d4af3700 100%);
+    transition: transform .3s ease;
+}
+
+#hero-button h3 {
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin: 0;
+    color: var(--main-background-color);
+}
+
+#hero-button:hover {
+    background-image: linear-gradient(to right, #d4af3700 0%, rgb(212, 175, 55) 10%, rgb(212, 175, 55) 90%, #d4af3700 100%);
+    transform: scale(1.05);
+}
+
+#hero span {
+    position: absolute;
+    background-color: var(--highlight-color);
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: var(--main-text-color); 
+}
+
+/* SOBRE MIM */
+
+#about-me {
+    padding: 2.7rem;
+}
+
+#about-me p {
+    text-align: justify;
+    letter-spacing: -.2px;
+    word-spacing: 2px;
+    margin: 0 10rem;
+}
+
+#about-me button {
+    margin: 1rem 0 2rem 0;
+    border: none;
+    font-weight: 500;
+    font-size: .9rem;
+    color: var(--main-background-color);
+    background-color: var(--main-text-color);
+    padding: 7px 15px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+#about-me button:hover {
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+    box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* EXPERIÊNCIA */
+
+#experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--highlight-color);
+    padding: 2.7rem 10rem;
+}
+
+#experience img {
+    display: block;
+    margin: auto;
+    height: 17vw;
+    border-radius: 150px;
+}
+
+#experience strong {
+    font-size: 3.5vw;
+    font-weight: 600;
+    color: var(--main-text-color);
+}
+
+#experience p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #D4AF37;
+    font-weight: 500;
+}
+
+/* DEPOIMENTOS */
+
+#feedback p {
+    margin: 0 0 2rem 0;
+}
+
+#feedback h2 {
+    margin: 0;
+}
+
+/* COMO TE AJUDO & DÚVIDAS */
+
+#services, #qa {
+    padding: 2.7rem 12.7rem;
+    background-color: var(--main-background-color);
+    overflow: hidden;
+}
+
+#services {
+    background-color: var(--highlight-color);
+}
+
+#services h2, #qa h2 {
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+details {
+    display: block;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--main-background-color);
+    padding: 12.5px 15px;
+    border-radius: 50px;
+    margin: .7rem auto;
+    border: solid 1px rgb(211, 208, 208);
+}
+
+#qa details {
+    background-color: var(--secondary-background-color);
+}
+
+summary {
+    list-style: none;
+}
+
+summary div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+details p {
+    text-align: justify;
+    padding: 1px 15px;
+    transition: all 0.5s ease;
+}
+
+::details-content {
+    transition: height 0.5s ease, content-visibility 0.5s ease allow-discrete;
+    height: 0;
+    overflow: clip;
+}
+
+@supports (interpolate-size: allow-keywords) {
+    :root {
+        interpolate-size: allow-keywords;
+    }
+
+    [open]::details-content {
+        height: auto;
+    }
+}
+
+@supports selector(::details-content) {
+    .notice {
+        display: none;
+    }
+}
+
+details img {
+    height: 1rem;
+}
+
+details h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* CONSULTÓRIO */
+
+#office {
+    background-color: var(--highlight-color);
+}
+
+#office div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0 10vw 2.7rem 10vw;
+}
+
+#office img {
+    width: 25vw;
+}
+
+/* CONTATO */
+
+#contact {
+    background-color: var(--secondary-background-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2.7rem 12.7rem 0 12.7rem;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#profile img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+}
+
+#profile p {
+    text-align: left;
+    font-weight: 500;
+}
+
+#info {
+    display: block;
+    text-align: center;
+    
+}
+
+#info img {
+    width: 1.2vw;
+}
+
+#info h3 {
+    font-weight: 700;
+}
+
+#info p, #info a {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-weight: 500;
+    line-height: .25rem;
+    gap: .5rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+#info a:first-of-type {
+    margin-bottom: .25rem;
+}
+
+/* LOCALIZAÇÃO */
+
+#location {
+    background-color: var(--secondary-background-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem 17rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+#address {
+    display: block;
+    align-items: center;
+}
+
+#address h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#address p {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    text-align: left;
+    gap: .5rem;
+    margin-bottom: 3rem;
+}
+
+#address img {
+    width: 1.2rem;
+}
+
+#socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: .25rem;
+}
+
+#socials img {
+    width: 2.3rem;
+}
+
+#foto-predio img {
+    height: 30vh;
+}
+
+#location iframe {
+    height: 30vh;
+    width: 30vw;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--secondary-background-color);
+    padding: 0 12.7rem 1rem 12.7rem;
+    text-align: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer * {
+    margin: 0;
+}
+
+footer p {
+    font-size: .9vw;
+}
+
+footer #disclaimer {
+    background-color: #ffffff;
+    padding: 7px 15px;
+    border-radius: 50px;
+}
+
+footer img {
+    margin: 0 auto;
+    width: 15vw;
+}
+
+#politica a {
+    color: #c32a2a;
+    text-decoration: none;
+}
+
+#politica a:hover {
+    color: #184274;
+}
+
+/* DESIGN RESPONSIVO */
+
+@media (max-width: 600px) 
+{
+    #hero{
+        background-image: linear-gradient(var(--hero-background-color), rgba(226, 226, 224, 0.3), var(--hero-background-color)),
+                          url(images/hero.jpg);
+        background-position: 6% center;
+    }
+
+    #hero #logo {
+        width: 35vw;
+    }
+
+    #hero h2 {
+        font-size: 6vw;
+        text-shadow: 2px 2px 5px var(--hero-background-color), -2px -2px 5px var(--hero-background-color), -2px 2px 5px var(--hero-background-color), 2px -2px 5px var(--hero-background-color), 
+                     0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5);
+    }
+
+    #hero p {
+        font-size: 4vw;
+        width: 85vw;
+        text-shadow: 2px 2px 5px var(--hero-background-color), -2px -2px 5px var(--hero-background-color), -2px 2px 5px var(--hero-background-color), 2px -2px 5px var(--hero-background-color),
+                     0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5);
+    }
+
+    #hero span {
+        font-size: 4vw;
+    }
+
+    #about-me {
+        padding: 0;
+    }
+
+    #about-me h2 {
+        font-size: 5vw;
+    }
+
+    #about-me p {
+        font-size: 3vw;
+        margin: 0 15vw;
+    }
+
+    #about-me button {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) 
+{
+    #hero h2 {
+        font-size: 3.2vw;
+    }
+
+    #hero p {
+        font-size: 2.2vw;
+        width: 75vw;
+    }
+
+    #hero span {
+        font-size: 2.2vw;
+    }
+
+    #about-me {
+        margin: 0;
+    }
+
+    #about-me h2 {
+        font-size: 3vw;
+    }
+
+    #about-me p {
+        font-size: 2.3vw;
+        margin: 0 7vw;
+    }
+
+    #about-me button {
+        font-size: 2.3vw;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1300px) 
+{
+    #hero h2 {
+        font-size: 2.7vw;
+    }
+
+    #hero p {
+        font-size: 1.6vw;
+        width: 75vw;
+    }
+
+    #hero span {
+        font-size: 1.6vw;
+    }
+}
