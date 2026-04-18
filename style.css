@@ -51,7 +51,7 @@ html {
 }
 
 h2 {
-    font-size: 1.9rem;
+    font-size: x-large;
     font-weight: 600;
     letter-spacing: -1px;
     color: var(--main-text-color);
@@ -77,7 +77,7 @@ header {
     text-align: right;
 }
 
-header p {
+header nav {
     display: inline-flex;
     list-style-type: none;
     font-size: .95vw;
@@ -87,16 +87,28 @@ header p {
     margin: 0;
 }
 
-header p a {
+header nav a {
     text-decoration: none;
     color: #083632;
 }
 
-header p a:hover {
+header nav a:hover {
     color: #D4AF37;
 }
 
+#open-menu-btn {
+    display: none;
+}
+
+#close-menu-btn {
+    display: none;
+}
+
 /* HERO */
+
+#hero.jp {
+    background-image: url(images/heroJP.png);
+}
 
 #hero {
     position: relative;
@@ -122,7 +134,7 @@ header p a:hover {
 
 #hero h2 {
     position: absolute;
-    font-size: 2.2vw;
+    font-size: xx-large;
     font-weight: 500;
     top: 25vh;
     right: var(--side-margin);
@@ -139,7 +151,7 @@ header p a:hover {
     top: 35vh;
     right: var(--side-margin);
     width: 50vw;
-    font-size: 1.3vw;
+    font-size: x-large;
     font-weight: 500;
     text-align: right;
     letter-spacing: -1.2px;
@@ -147,6 +159,18 @@ header p a:hover {
     text-shadow: 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color);
     overflow: hidden;
     border-radius: 5px;
+}
+
+#hero h2.jp  {
+    top: 23vh;
+}info
+
+#hero p.jp {
+    top: 35vh;
+}
+
+#hero-button.jp {
+    top: 60vh;
 }
 
 #hero-button {
@@ -163,7 +187,7 @@ header p a:hover {
 }
 
 #hero-button h3 {
-    font-size: 1.3vw;
+    font-size: x-large;
     font-weight: 600;
     margin: 0;
     color: var(--main-background-color);
@@ -180,10 +204,39 @@ header p a:hover {
     bottom: 5px;
     width: 100%;
     text-align: center;
-    font-size: 1.3vw;
+    font-size: small;
     font-weight: 500;
     letter-spacing: -1px;
     color: var(--main-text-color); 
+}
+
+/* FRASE MOTIVACIONAL */
+#motivacional {
+    padding: 2.7rem;
+}
+
+/* SOLUÇÕES */
+#solutions {
+    padding: 2.7rem 1.5rem;
+    background-color: var(--highlight-color);
+}
+
+#sol-table {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#sol-table div {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    background-color: #C5EED1;
+    padding: 10px;
+    font-size: small;
+}
+
+#sol-table div:first-child {
+    background-color: var(--main-background-color);
 }
 
 /* SOBRE MIM */
@@ -193,17 +246,20 @@ header p a:hover {
 }
 
 #about-me p {
+    font-size: medium;
     text-align: justify;
     letter-spacing: -.2px;
     word-spacing: 2px;
     margin: 0 10rem;
 }
 
-#about-me button {
+#about-me button,
+#lets-talk button,
+#socials button {
     margin: 1rem 0 2rem 0;
     border: none;
     font-weight: 500;
-    font-size: .9rem;
+    font-size: medium;
     color: var(--main-background-color);
     background-color: var(--main-text-color);
     padding: 7px 15px;
@@ -211,7 +267,9 @@ header p a:hover {
     transition: all 0.3s ease;
 }
 
-#about-me button:hover {
+#about-me button:hover,
+#lets-talk button:hover,
+#socials button:hover {
     color: var(--main-text-color);
     background-color: var(--main-background-color);
     box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.5);
@@ -254,6 +312,7 @@ header p a:hover {
 
 #feedback p {
     margin: 0 0 2rem 0;
+    font-size: small;
 }
 
 #feedback h2 {
@@ -288,10 +347,11 @@ header p a:hover {
     border-radius: 50px;
     border: solid 1px rgb(211, 208, 208);
     background-color: var(--main-background-color);
+    text-align: left;
 }
 
 .box.open {
-    max-height: 500px;
+    max-height: 1000px;
 }
 
 .box .label {
@@ -309,7 +369,7 @@ header p a:hover {
 }
 
 .box .label h3 {
-    font-size: 1.1rem;
+    font-size: medium;
     line-height: 1.2rem;
     margin: 0;
     padding: 0;
@@ -320,22 +380,39 @@ header p a:hover {
     text-align: justify;
     padding-top: 1.6rem;
     margin: 0;
+    font-size: small;
+}
+
+/* VAMOS CONVERSAR */
+
+#lets-talk {
+    padding: 0 2.7rem;
+}
+
+#lets-talk p {
+    text-align: center;
+}
+
+/* DÚVIDAS JAPÃO */
+#qa.jp {
+    background-color: var(--highlight-color);
 }
 
 /* CONSULTÓRIO */
 
-#office {
+.office {
     background-color: var(--highlight-color);
 }
 
-#office div {
+.office div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     padding: 0 10vw 2.7rem 10vw;
+    transition: none;
 }
 
-#office img {
+.office img {
     width: 25vw;
 }
 
@@ -346,6 +423,15 @@ header p a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2.7rem 11vw 0 11vw;
+}
+
+#contact #links {
+    font-size: small;
+    text-align: justify;
+}
+
+#links a {
+    color: var(--main-text-color);
 }
 
 #profile {
@@ -377,14 +463,15 @@ header p a:hover {
 
 #info h3 {
     font-weight: 700;
+    font-size: medium;
 }
 
 #info p, #info a {
     display: flex;
+    font-size: small;
     align-items: center; 
     justify-content: center;
     font-weight: 500;
-    line-height: .25vw;
     gap: .5vw;
     text-decoration: none;
     color: #000000;
@@ -394,7 +481,19 @@ header p a:hover {
     margin-bottom: .25vw;
 }
 
+/* LOCALIZAÇÃO E INFORMAÇÕES JAPÃO */
+#loc-info {
+    display: flex;
+    background-color: var(--secondary-background-color);
+    padding: 0 2.7rem;
+}
+
 /* LOCALIZAÇÃO */
+
+#loc-info {
+    align-items: center;
+    justify-content: center;
+}
 
 #location {
     background-color: var(--secondary-background-color);
@@ -418,13 +517,14 @@ header p a:hover {
 }
 
 #address h3 {
-    font-size: 1.2rem;
     margin: 0;
+    font-size: medium;
 }
 
 #address p {
     display: flex;
     font-weight: 500;
+    font-size: small;
     align-items: center;
     text-align: left;
     gap: .5vw;
@@ -442,15 +542,28 @@ header p a:hover {
     gap: .25rem;
 }
 
+#socials a {
+    text-decoration: none;
+}
+
+#socials.jp {
+    display: block;
+}
+
 #socials img {
     width: 2.3rem;
+}
+
+#socials.jp button {
+    font-size: small;
 }
 
 #foto-predio img {
     height: 30vh;
 }
 
-#location iframe {
+#location iframe,
+#mobile-div.jp div iframe {
     height: 30vh;
     width: 30vw;
 }
@@ -498,6 +611,59 @@ footer img {
 
 @media (max-width: 600px) 
 {
+    header nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        background-color: var(--main-text-color);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 50px;
+        display: block;
+    }
+
+    header nav.active {
+        width: 50vw;
+    }
+
+    #open-menu-btn {
+        display: block;
+        margin: 5px 10px 0 15px;
+        cursor: pointer;
+    }
+
+    #open-menu-btn img {
+        height: 5vw;
+        width: 5vw;
+        filter: invert(25%) sepia(8%) saturate(7374%) hue-rotate(131deg) brightness(91%) contrast(94%);
+    }
+
+    #close-menu-btn {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        font-family: var(--main-font-family);
+    }
+
+    #close-menu-btn img {
+        height: 5vw;
+        width: 5vw;
+        filter: invert(100%);
+    }
+
+    header nav a {
+        padding: 15px;
+        text-decoration: none;
+        color: var(--main-background-color);
+        display: block;
+        font-size: 4vw;
+    }
+
     #hero{
         background-image: linear-gradient(var(--hero-background-color), rgba(226, 226, 224, 0.3), var(--hero-background-color)),
                           url(images/hero.jpg);
@@ -509,12 +675,13 @@ footer img {
     }
 
     #hero h2 {
-        font-size: 6vw;
+        top: 15vh;
         text-shadow: 2px 2px 5px var(--hero-background-color), -2px -2px 5px var(--hero-background-color), -2px 2px 5px var(--hero-background-color), 2px -2px 5px var(--hero-background-color), 
                      0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5);
     }
 
     #hero p {
+        top: 40vh;
         font-size: 4vw;
         width: 85vw;
         text-shadow: 2px 2px 5px var(--hero-background-color), -2px -2px 5px var(--hero-background-color), -2px 2px 5px var(--hero-background-color), 2px -2px 5px var(--hero-background-color),
@@ -525,25 +692,12 @@ footer img {
         font-size: 4vw;
     }
 
-    #hero span {
-        font-size: 4vw;
-    }
-
     #about-me {
         padding: 0;
     }
 
-    #about-me h2 {
-        font-size: 5vw;
-    }
-
     #about-me p {
-        font-size: small;
         margin: 0 15vw;
-    }
-
-    #about-me button {
-        font-size: 3vw;
     }
 
     #experience img {
@@ -559,13 +713,21 @@ footer img {
         font-size: medium;
     }
 
-    #feedback p {
-        font-size: medium;
-    }
-
     #contact {
         display: block;
         padding: 2.7rem 5vw 0 5vw;
+        gap: 0;
+    }
+
+    #contact div {
+        margin: 0;
+    }
+
+    #contact #links {
+        padding: 0 0.5rem;
+        margin: 0 1.5rem;
+        background-color: var(--main-background-color);
+        border-radius: 10px;
     }
     
     #profile {
@@ -589,7 +751,6 @@ footer img {
     
     #info h3 {
         margin-bottom: 2vw;
-        font-size: large;
     }
     
     #info p, #info a {
@@ -618,7 +779,6 @@ footer img {
     }
 
     #address h3 {
-        font-size: large;
         margin: 0;
     }
 
@@ -668,20 +828,69 @@ footer img {
     footer p {
         font-size: 2vw;
     }
+
+    .office {
+        border-radius: 10px;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .office div {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 80vw;
+    }
+
+    .office img {
+        width: inherit;
+        object-fit: contain;
+        display: block;
+    }
+
+    /* JAPÃO */
+
+    #hero h2.jp  {
+        top: 7vh;
+    }
+
+    #hero p.jp {
+        top: 45vh;
+    }
+
+    #hero-button.jp {
+        top: 65vh;
+    }
+
+    #loc-info {
+        display: block;
+    }
+
+    #mobile-div.jp {
+        display: block;
+        gap: 10px;
+    }
+
+    #address p {
+        max-width: 100%;
+    }
+
+    #socials.jp button {
+        margin: 0 0 10px 0;
+    }
+
+    #mobile-div.jp div iframe {
+        height: 15vh;
+        width: 100%;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 1000px) 
 {
-    header p {
-        font-size: 2vw;
-    }
-
     #hero h2 {
-        font-size: 3.2vw;
+        top: 20vh;
     }
 
     #hero p {
-        font-size: 2.5vw;
         width: 75vw;
     }
 
@@ -689,25 +898,8 @@ footer img {
         font-size: 3vw;
     }
 
-    #hero span {
-        font-size: 2.3vw;
-    }
-
     #about-me {
         margin: 0;
-    }
-
-    #about-me h2 {
-        font-size: 3vw;
-    }
-
-    #about-me p {
-        font-size: 2.3vw;
-        margin: 0 7vw;
-    }
-
-    #about-me button {
-        font-size: 2.3vw;
     }
 
     #experience img {
@@ -720,7 +912,6 @@ footer img {
 
     #info h3 {
         margin-bottom: 2vw;
-        font-size: large;
     }
 
     #info p, #info a {
@@ -736,10 +927,6 @@ footer img {
     #location {
         padding: 2rem 4vw;
         gap: 1vw;
-    }
-
-    #address h3 {
-        font-size: large;
     }
 
     #address p {
@@ -778,6 +965,29 @@ footer img {
     footer img {
         width: 25vw;
     }
+
+    /* JAPÃO */
+
+    #hero h2.jp  {
+        top: 25vh;
+    }
+
+    #hero p.jp {
+        top: 40vh;
+    }
+
+    #hero-button.jp {
+        top: 60vh;
+    }
+
+    #socials.jp img {
+        width: 3vw;
+    }
+
+    #mobile-div.jp div iframe {
+        height: 100%;
+        width: 20vw;
+    }
 }
 
 @media (min-width: 1001px) and (max-width: 1300px) 
@@ -785,18 +995,9 @@ footer img {
     header p {
         font-size: 1.55vw;
     }
-    
-    #hero h2 {
-        font-size: 2.7vw;
-    }
 
     #hero p {
-        font-size: 1.6vw;
         width: 75vw;
-    }
-
-    #hero span {
-        font-size: 1.6vw;
     }
 
     footer {
@@ -804,6 +1005,85 @@ footer img {
     }
 
     footer p {
-        font-size: 1.25vw;
+        font-size: 1vw;
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 5000px) {
+    #hero h2 {
+        font-size: 2.2vw;
+    }
+
+    #hero p {
+        font-size: 1vw;
+    }
+
+    #hero p.jp {
+        top: 40vh;
+    }
+
+    #hero span {
+        font-size: x-large;
+    }
+
+    #hero-button h3 {
+        font-size: 1.2vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+
+    h3 {
+        font-size: 1.5vw;
+    }
+
+    #motivacional p,
+    #solutions p,
+    #about-me p,
+    #feedback p,
+    #lets-talk p,
+    #sol-table div,
+    .box p {
+        font-size: .8vw;
+    }
+
+    #about-me button,
+    #lets-talk button,
+    #socials.jp button {
+        font-size: .75vw;
+    }
+
+    .box .label h3 {
+        font-size: .9vw;
+    }
+
+    #profile p {
+        font-size: 1vw;
+    }
+
+    #links p {
+        font-size: .7vw;
+    }
+
+    #loc-info {
+        padding: 0 10rem;
+    }
+
+    #loc-info h3 {
+        font-size: 1vw;
+    }
+
+    #loc-info a,
+    #loc-info p,
+    #mobile-div a,
+    #mobile-div p,
+    #contact a,
+    #contact p {
+        font-size: .7vw;
+    }
+
+    footer p {
+        font-size: .6vw;
     }
 }

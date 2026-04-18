@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Lucia Tomita - Psicóloga Clínica</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Botão Hambúrguer -->
+        <div id="open-menu-btn"><img src="images/menu.svg" alt="Abrir Menu"></div>
+
+        <!-- Barra de navegação -->
+        <nav>
+            <div id="close-menu-btn">
+                <img src="images/fechar.svg" alt="Fechar Menu">
+            </div>
+            <a href="#hero">INÍCIO</a>
+            <a href="#about-me">SOBRE MIM</a>
+            <a href="#feedback">DEPOIMENTOS</a>
+            <a href="#services">COMO TE AJUDO</a>
+            <a href="#qa">DÚVIDAS</a>
+            <a href="#contact">CONTATO</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="jp">
+            <!-- Logo -->
+            <img src="images/logo.png" alt="Logo da psicóloga Lucia Tomita" id="logo">
+
+            <!-- Frase principal -->
+            <h2 class="jp">Psicóloga online para brasileiros no Japão (terapia online com acolhimento e escuta empática)</h2>
+
+            <!-- Frase secundária -->
+            <p class="jp">Você não precisa enfrentar tudo sozinho. Um espaço de escuta profissional para quem carrega saudades, desafios e vontade de se reencontrar.</p>
+
+            <!-- Botão de marcar consulta -->
+            <div onclick="window.location.href='/contato.html'" id="hero-button" class="jp">
+                <h3>Marque sua consulta</h3>
+            </div>
+
+            <!-- Faixa -->
+            <span>Atendimento psicológico para brasileiros no Japão – em português e por quem já viveu no Japão.</span>
+
+            <!-- Background -->
+            <img id="hero-background" src="images/heroJP.png" alt="Foto da psicóloga Lucia Tomita" style="visibility: hidden; width: 100%;">
+        </section>
+        <section id="motivacional">
+            <!-- Título -->
+            <h3>🌿 Seu sentir importa. Sua história merece cuidado.</h3>
+
+            <p>Você merece ser ouvido com respeito, acolhimento, empatia e sem julgamentos.</br>Falar é o primeiro passo. Não espere chegar ao limite.</p>
+        </section>
+        <section id="solutions">
+            <!-- Título -->
+            <h3>🎭 Entre a dor e o cuidado — o espaço da psicoterapia</h3>
+
+            <!-- Subtítulo -->
+            <p>Entre o que você sente e o que você precisa, existe um espaço de escuta, acolhimento e reconstrução.</br>A psicoterapia é esse espaço.</p>
+
+            <!-- Tabela de sintomas e soluções -->
+            <div id="sol-table">
+                <div>
+                    <strong>🔹 O que você pode estar sentindo</strong><br>
+                    😔 Solidão<br>
+                    💭 Saudade<br>
+                    🌀 Sentimento de não pertencer, de ser estrangeiro<br>
+                    🚪 Isolamento social<br>
+                    🌧 Tristeza constante<br>
+                    🕳 Desamparo emocional<br>
+                    🎭 Culpa por estar longe da família<br>
+                    💓 Ansiedade<br>
+                    ❓ Sentimento de inadequação<br>
+                    🌍 Estresse constante<br>
+                    🧨 Medo de falhar<br>
+                    🙈 Vergonha<br>
+                    🔌 Desconexão<br>
+                    🌱 Dificuldade de ajuste aos novos costumes e valores<br>
+                    🧭 Dificuldade de adaptação ao novo ambiente<br>
+                    💬 Dificuldade de aprendizado do novo idioma<br>
+                    🌫 Angústia existencial<br>
+                    🛑 Insegurança<br>
+                    🔐 Bloqueios emocionais<br>
+                    🌙 Insônia<br>
+                    🧠 Dificuldade de concentração<br>
+                </div>
+                <div>
+                    <strong>🔸 O que a terapia oferece</strong><br>
+                    💕 Acolhimento e apoio emocional<br>
+                    👂 Escuta especializada e sem julgamento<br>
+                    🤗 Regulação da ansiedade, estresse e tristeza<br>
+                    🪪 Fortalecimento da identidade e autoestima<br>
+                    🔗 Reconexão interna<br>
+                    🏡 Pertencimento e integração<br>
+                    ✈️ Elaboração do luto migratório<br>
+                    🤝 Apoio na adaptação cultural<br>
+                    🌍 Organização da vida e objetivos no exterior<br>
+                    👫 Melhoria nas relações interepessoais<br>
+                    🧭 Autoconhecimento e sentido de vida<br>
+                    💪 Força para viver com autenticidade<br>
+                    📡 Comunicação afetiva<br>
+                    ⚖️ Equilíbrio emocional<br>
+                    🧰 Recursos internos<br>
+                    🧭 estratégias de enfrentamento<br>
+                    🚀 Desenvolvimento pessoal<br>
+                    💡 Clareza mental para lidar com os desafios<br>
+                    🛡️ Segurança e confiança<br>
+                    🎯 Decisões de forma assertiva<br>
+                    🌾 Flexibilidade e resiliência<br>
+                    🧠 Resolução de problemas<br>
+                </div>
+            </div>
+        </section>
+        <section id="about-me">
+
+            <!-- Título -->
+            <h2>SOBRE MIM</h2>
+
+            <!-- Sobre -->
+            <p>Seja bem vindo(a) a minha história profissional. Sou Lucia Tomita, <strong>psicóloga clínica</strong>, e atuo na área do <strong>desenvolvimento humano</strong> há mais de 22 anos. Realizo atendimentos psicológicos individuais a <strong>adolescentes, adultos e idosos</strong>. Trabalho com <strong>psicoterapia breve</strong> e com a abordagem da <strong>Terapia Cognitivo-Comportamental (TCC)</strong>, oferecendo atendimento online. Minha escuta é voltada a <strong>brasileiros corajosos que vivem fora do país</strong>, especialmente no Japão, enfrentando os desafios emocionais e culturais de uma vida entre mundos.<br>Tenho experiência de vida no Japão e atuei por muitos anos em empresas japonesas com foco em desenvolvimento humano. Essa experiência me deu uma compreensão profunda dos impactos emocionais que a adaptação ao Japão pode trazer: desde a solidão até o desgaste psicológico, passando por conflitos de identidade, relacionamento e comunicação. Agora que você conhece um pouco da minha trajetória, fico à disposição para conhecer a sua, e <strong>caminhar ao seu lado</strong> nesse processo de autoconhecimento e transformação.</p>
+
+            <!-- Botão para Sobre Mim -->
+            <a href="INSERIR">
+                <button type="button">Me conheça mais</button>
+            </a>
+        </section>
+        <section id="experience">
+            <!-- Imagem -->
+            <img src="images/experiencia.jpg" alt="Foto da psicóloga Lucia Tomita">
+
+            <!-- Dados -->
+            <div>
+                <p><strong>+7000</strong></p>
+                <p>Horas de Aperfeiçoamento na Prática Clínica</p>
+
+                <p><strong>+22</strong></p>
+                <p>Anos de Experiência</p>
+            </div>
+        </section>
+        <section id="feedback">
+            <!-- Título -->
+            <h2>DEPOIMENTOS</h2>
+
+            <!-- Subtítulo -->
+            <p>Pessoas reais, mudanças reais. Veja alguns depoimentos dos meus atendimentos.</p>
+
+            <!-- Carrossel de avaliações -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-ec44df5f-a023-4821-8545-a9101158d6f8" data-elfsight-app-lazy></div>
+
+            <!-- Disclaimer -->
+            <p>Todos os depoimentos foram previamente autorizados conforme nota técnica 01/2022 do Conselho Federal de Psicologia.</p>
+        </section>
+        <section id="services">
+            <!-- Título -->
+            <h2>COMO TE AJUDO</h2>
+
+            <div class="accordion">
+                <!-- Online -->
+                <div class="box">
+                    <div class="label">
+                        <img src="images/mais.png" alt="Ver mais">
+                        <h3>Psicoterapia Online</h3>
+                    </div>
+                    <p>
+                        Ideal para quem tem rotina intensa, ou vive em outro país, ou vive em regiões isoladas, a terapia online oferece flexibilidade de horários, elimina deslocamentos e permite que você se cuide no conforto do seu espaço — seja em casa, no trabalho, ou em qualquer outro lugar. Com a mesma eficácia do atendimento presencial, você conta com um ambiente sigiloso, ético e acolhedor.<br> Mais praticidade, sem abrir mão da qualidade no cuidado com sua saúde mental. É recomendável que se organize em um local privativo, que se sinta confortável e seguro para falar. Para garantir a qualidade da sessão, tenha uma boa conexão de internet e utilize fones de ouvido.
+                    </p>
+                </div>
+
+                <!-- Individual -->
+                <div class="box">
+                    <div class="label">
+                        <img src="images/mais.png" alt="Ver mais">
+                        <h3>Psicoterapia Individual</h3>
+                    </div>
+                    <p>
+                        É um processo terapêutico profundo e transformador, que tem como objetivo auxiliá-lo a compreender melhor suas emoções, pensamentos e comportamentos.<br> Através de uma escuta especializada, empática e ética, ofereco suporte humano e personalizado, respeitando o seu ritmo e as suas necessidades. Na primeira sessão, identificaremos as suas principais demandas e definiremos juntos os objetivos e metas do seu processo terapêutico. A psicoterapia pode trazer mudanças eficazes e duradouras, promovendo autoconhecimento, bem-estar emocional e qualidade de vida.
+                    </p>
+                </div>
+
+                <!-- Breve -->
+                <div class="box">
+                    <div class="label">
+                        <img src="images/mais.png" alt="Ver mais">
+                        <h3>Psicoterapia Breve</h3>
+                    </div>
+                    <p>
+                        É uma abordagem terapêutica focada, com duração previamente definida, que busca promover mudanças significativas em um curto espaço de tempo. Seu diferencial está no trabalho centrado em um <strong>conflito psíquico específico</strong>, como crises, lutos, dificuldades nos relacionamentos ou momentos de transição. A Psicoterapia Breve é ideal para quem busca foco, intensidade e transformação em um tempo delimitado.
+                    </p>
+                </div>
+
+                <!-- TCC -->
+                <div class="box">
+                    <div class="label">
+                        <img src="images/mais.png" alt="Ver mais">
+                        <h3>Psicoterapia Cognitivo Comportamental (TCC)</h3>
+                    </div>
+                    <p>
+                        É um caminho acolhedor de cuidado emocional que ajuda você a entender como seus pensamentos influenciam seus sentimentos e comportamentos. Com escuta atenta e estratégias práticas, trabalhamos juntos para transformar padrões que trazem sofrimento, promovendo mais equilíbrio, bem-estar e qualidade de vida no seu dia a dia.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="lets-talk">
+            <h2>VAMOS CONVERSAR?</h2>
+            <p>🔔 Se você se sente diferente, sozinho ou confuso, saiba que isso não significa fraqueza. A psicoterapia online oferece escuta sem julgamento, no seu tempo e no seu idioma. Cuidar de si é um gesto de coragem. Vamos conversar?</p>
+
+            <!-- Botão para Entrar em contato -->
+            <a href="/contato.html">
+                <button type="button">Entre em contato agora</button>
+            </a>
+        </section>
+        <section id="qa" class="jp">
+            <!-- Título -->
+            <h2>DÚVIDAS</h2>
+
+            <div class="accordion">
+                <!-- Localização -->
+                <div class="box">
+                    <div class="label">
+                        <img src="images/mais.png" alt="Ver mais">
+                        <h3>A psicóloga está localizada no Japão?</h3>
+                    </div>
+                    <p>
+                        Não, resido no Brasil e faço os atendimentos online através de computador ou smartphone.
+                    </p>
+                </div>
+
+                <!-- Funcionamento -->
+                <div class="box">
+                    <div class="label">
+                        <img src="images/mais.png" alt="Ver mais">
+                        <h3>Como funciona a psicoterapia?</h3>
+                    </div>
+                    <p>
+                        Na psicoterapia individual você receberá uma atenção exclusiva e personalizada. A psicoterapia acontece de forma online, com sessões semanais de 50 a 60 minutos de duração. No entanto, esses acordos podem ser ajustados conforme suas necessidade e possibilidades. Além da escuta e das intervenções durante a conversa, o processo terapêutico pode incluir o uso de avaliações psicológicas caso necessário, e sempre com sua concordância prévia.
+                    </p>
+                </div>
+
+                <!-- Horário -->
+                <div class="box">
+                    <div class="label">
+                        <img src="images/mais.png" alt="Ver mais">
+                        <h3>Horário de funcionamento</h3>
+                    </div>
+                    <p>
+                        Ofereço horários flexíveis para atender as suas demandas individuais, correspondente ao fuso horário do local que você reside. Não hesite em tirar dúvidas em relação a isso. Os atendimentos são de segunda a sábado. Os atendimentos devem ser previamente agendados por whatsapp, e-mail ou formulário de contato.
+                    </p>
+                </div>
+
+                <!-- Público -->
+                <div class="box">
+                    <div class="label">
+                        <img src="images/mais.png" alt="Ver mais">
+                        <h3>Público atendido</h3>
+                    </div>
+                    <p>
+                        Atendo dolescentes, adultos, idosos e brasileiros que moram fora do Brasil.
+                    </p>
+                </div>
+
+                <!-- Plano de saúde -->
+                <div class="box">
+                    <div class="label">
+                        <img src="images/mais.png" alt="Ver mais">
+                        <h3>Aceita plano de saúde?</h3>
+                    </div>
+                    <p>
+                        Nossas consultas são particulares. No entanto, você pode ter ressarcimento através do sistema de reembolso. Após o pagamento, emito recibos e relatórios necessários para que você receba o reembolso pelo seu plano de saúde. O reembolso pode chegar a 100% do valor pago e o número de atendimentos é ilimitado. Para descobrir o valor de reembolso, consulte a central de atendimento do seu plano de saúde para mais informações.
+                    </p>
+                </div>
+
+                <!-- Custo -->
+                <div class="box">
+                    <div class="label">
+                        <img src="images/mais.png" alt="Ver mais">
+                        <h3>Quanto custa uma consulta?</h3>
+                    </div>
+                    <p>
+                        O valor da psicoterapia é conforme tabela de honorário dos psicólogos anunciado pelo Conselho Federal de Psicologia (CFP) com vigência anual (de junho a maio do ano seguinte). O valor da sessão é R$ 300,00 (50 minutos), com reajuste em maio/2026.
+                    </p>
+                </div>
+
+                <!-- Custo -->
+                <div class="box">
+                    <div class="label">
+                        <img src="images/mais.png" alt="Ver mais">
+                        <h3>Formas de pagamento</h3>
+                    </div>
+                    <p>
+                        O pagamento pode ser feito por pix, transferência bancária internacional ou paypal (cartão até 3 vezes, com taxa de 10% da plataforma de pagamento). O primeiro pagamento é realizado no ato do agendamento do primeiro atendimento. Para as demais sessões, serão acordadas nesse primeiro atendimento.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div id="profile">
+                <!-- Foto -->
+                <img src="images/contato.jpg" alt="Foto da psicóloga Lucia Tomita">
+
+                <!-- Perfil -->
+                <p><strong>Lucia Tomita</strong><br>Psicóloga clínica<br>CRP 06/164901</p>
+            </div>
+            <div id="links">
+                <p>
+                    Links importantes:<br>
+                    <a href="https://site.cfp.org.br/">- Conselho Federal de Psicologogia (CFP)</a><br>
+                    <a href="https://atosoficiais.com.br/cfp/resolucao-do-exercicio-profissional-n-9-2024-regulamenta-o-exercicio-profissional-da-psicologia-mediado-por-tecnologias-digitais-da-informacao-e-da-comunicacao-tdics-em-territorio-nacional-e-revoga-as-resolucao-cfp-no-11-de-11-de-maio-de-2018-e-resolucao-cfp-no-04-de-26-de-marco-de-2020?origin=instituicao&q=09/2024">- Resolução CFP nº9, de 18/07/2024 sobre Psicologia online</a><br>
+                    <a href="https://site.cfp.org.br/wp-content/uploads/2012/07/codigo-de-etica-psicologia.pdf">- Código de Ética do profissional psicólogo</a><br>
+                    <a href="https://site.cfp.org.br/wp-content/uploads/2024/12/FENAPSI_TABELA_ATUALIZADA_Maio_2024.pdf">- Tabela de honorário dos psicólogos CFP</a><br>
+                    <a href="/regularity.html">- Certificado de regularidade do psicólogo CFP</a><br>
+                    <a href="/specialization.html">- Certificado de especialização em Psicologia clínica no Japão</a>
+                </p>
+            </div>
+        </section>
+        <section id="loc-info">
+            <div id="info">
+                <h3>FALE CONOSCO</h3>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5511942642493">
+                    <img src="images/whatsapp.png" alt="Whatsapp">
+                    + 55 (11) 94264-2493
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:psicologa@luciatomita.com.br">
+                    <img src="images/email.png" alt="Email">
+                    psicologa@luciatomita.com.br
+                </a>
+
+                <h3>HORÁRIO DE ATENDIMENTO</h3>
+                <p>Disponibilizo horários flexíveis para atender sua demanda individual.</p>
+            </div>
+            <div id="mobile-div" class="jp">
+                <div id="address">
+                    <h3>ATENDIMENTO PRESENCIAL</h3>
+                    <p>
+                        <img src="images/localizacao.png" alt="Endereço">
+                        Av. Pedro Blanco da Silva, 729 Jardim Santa Adelaide, Jundiaí-SP
+                    </p>
+                </div>
+                <div id="socials" class="jp">
+                    <a href="/contato.html">
+                        <button type="button">Entre em contato agora</button>
+                    </a>
+                    <div>
+                        <a href="https://www.instagram.com/psicologaluciatomita">
+                            <img src="images/location-instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://maps.app.goo.gl/CDmAZcmFQo18foFU6">
+                            <img src="images/location-maps.png" alt="Localização no Google Maps">
+                        </a>
+                        <a href="www.zoom.com">
+                            <img src="images/location-zoom.png" alt="Zoom">
+                        </a>
+                        <a href="https://wa.me/5511942642493">
+                            <img src="images/location-whatsapp.png" alt="WhatsApp">
+                        </a>
+                        <a href="https://meet.google.com">
+                            <img src="images/location-meet.png" alt="Google Meet">
+                        </a>
+                    </div>
+                </div>
+                <div name="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14669.093485860372!2d-46.897128!3d-23.196706000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2698d87f980d%3A0x1b468725ede9a4a2!2sBelvedere%20Plaza!5e0!3m2!1spt-BR!2sbr!4v1771553439759!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="disclaimer">
+            Atenção: Se você estiver em crise, com ideação ou planejamento suicida, entre em contato em lingua portuguesa com o Centro de Valorização da Vida - CVV (cvv.org.br) ou procure o serviço consular do Brasil no Japão ou a Linha de apoio aos latinos (lal-yokohama.org). Em caso de emergência, procure o hospital mais próximo. Havendo risco de morte, ligue imediatamente para a polícia local. 
+        </p>
+        <img src="images/footer.png" alt="Certificado de site seguro">
+        <p id="politica">
+            <a href="INSERIR">Política de privacidade.</a>
+            <a href="INSERIR">Termos de uso.</a>
+        </p>
+        <p>© Copyright Lucia Tomita - 2025. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+<script>
+    // Dinamizando o menu sanfona
+    jQuery(".box .label").click(function(){ 
+	    if (jQuery(this).parent().hasClass("open")) {
+	    	jQuery(this).parent().removeClass("open");
+            jQuery(this).children("img")
+                .attr("src", "images/mais.png")
+                .attr("alt", "Ver mais");
+	    } else {
+		    jQuery(".box").removeClass("open")
+                .find(".label img")
+                .attr("src", "images/mais.png")
+                .attr("alt", "Ver mais");
+
+            jQuery(this).parent().addClass("open");
+
+            jQuery(this).children("img")
+                .attr("src", "images/menos.png")
+                .attr("alt", "Ver menos");
+	    }
+    });
+
+    // Menu mobile
+    const menuBtn = document.getElementById('open-menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.querySelector('header nav');
+
+    // Abrir menu
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+    });
+
+    // Fechar menu
+    document.querySelectorAll('header nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    });
+    closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+    });
+</script>

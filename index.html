@@ -9,18 +9,23 @@
 </head>
 <body>
     <header>
-        <p>
+        <!-- Botão Hambúrguer -->
+        <div id="open-menu-btn"><img src="images/menu.svg" alt="Abrir Menu"></div>
+
+        <!-- Barra de navegação -->
+        <nav>
+            <div id="close-menu-btn">
+                <img src="images/fechar.svg" alt="Fechar Menu">
+            </div>
             <a href="#hero">INÍCIO</a>
             <a href="#about-me">SOBRE MIM</a>
             <a href="#feedback">DEPOIMENTOS</a>
             <a href="#services">COMO TE AJUDO</a>
             <a href="#qa">DÚVIDAS</a>
             <a href="#contact">CONTATO</a>
-            <a href="">BLOG</a>
-        </p>
+        </nav>
     </header>
     <main>
-        </div>
         <section id="hero">
             <!-- Logo -->
             <img src="images/logo.png" alt="Logo da psicóloga Lucia Tomita" id="logo">
@@ -194,7 +199,7 @@
                 </div>
             </div>
         </section>
-        <section id="office">
+        <section class="office">
             <!-- Título -->
             <h2>CONSULTÓRIO</h2>
 
@@ -322,5 +327,43 @@
                 .attr("src", "images/menos.png")
                 .attr("alt", "Ver menos");
 	    }
+    });
+
+    // Animando carrossel de imagens
+    const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if (windowWidth <= 600) {
+        const slides = document.querySelector('.office div');
+        const imagens = document.querySelectorAll('.office img');
+
+        let index = 0;
+
+        function mostrarSlide() {
+            slides.style.transform = `translateX(${-index * 80}%)`;
+        }
+
+        setInterval(() => {
+            index = (index + 1) % imagens.length;
+            mostrarSlide();
+        }, 3000);
+    }
+
+    // Menu mobile
+    const menuBtn = document.getElementById('open-menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.querySelector('header nav');
+
+    // Abrir menu
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+    });
+
+    // Fechar menu
+    document.querySelectorAll('header nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    });
+    closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
     });
 </script>
