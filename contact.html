@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <!-- Botão Hambúrguer -->
+        <div id="open-menu-btn"><img src="images/menu.svg" alt="Abrir Menu"></div>
+
+        <!-- Barra de navegação -->
+        <nav>
+            <div id="close-menu-btn">
+                <img src="images/fechar.svg" alt="Fechar Menu">
+            </div>
+            <a href="indexJP.html">INÍCIO</a>
+            <a href="#contact">CONTATO</a>
+        </nav>
+    </header>
+    <main id="contact">
+        <h1>CONTATO</h1>
+        <h2>Utilize uma das opções abaixo para agendar consultas, sanar dúvidas, solicitar atendimento ou receber orçamento. Assim que possível, farei contato. Se preferir a resposta por E-mail, peço a gentileza de conferir a caixa de E-mail informado no formulário.</h2>
+        <a href="https://wa.me/5511942642493">
+            <button type="button">
+                <img src="images/whatsapp.png" alt="WhatsApp">
+                Contatar pelo WhatsApp
+            </button>
+        </a>
+    </main>
+</body>
+</html>
+<script>
+    // Menu mobile
+    const menuBtn = document.getElementById('open-menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.querySelector('header nav');
+
+    // Abrir menu
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+    });
+
+    // Fechar menu
+    document.querySelectorAll('header nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    });
+    closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+    });
+</script>

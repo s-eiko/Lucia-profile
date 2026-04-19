@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Certidão de Regularidade</title>
+</head>
+<body>
+    <header>
+        <!-- Botão Hambúrguer -->
+        <div id="open-menu-btn"><img src="images/menu.svg" alt="Abrir Menu"></div>
+
+        <!-- Barra de navegação -->
+        <nav>
+            <div id="close-menu-btn">
+                <img src="images/fechar.svg" alt="Fechar Menu">
+            </div>
+            <a href="indexJP.html">INÍCIO</a>
+            <a href="#contact">CONTATO</a>
+        </nav>
+    </header>
+    <main>
+        <section id="certification">
+            <h1>Certidão de regularidade de inscrição emitida pelo Conselho Regional de Psicologia de São Paulo (CRP-SP) para a psicóloga Lucia Tomita.</h1>
+            <iframe src="assets/CERTIDAO-DE-REGULARIDADE.pdf" width="100%" height="600px">
+                <p>Seu navegador não suporta PDFs. Por favor baixe o PDF para vê-lo: <a href="assets/CERTIDAO-DE-REGULARIDADE.pdf">Download PDF</a></p>
+            </iframe>
+        </section>
+        <section id="contact">
+            <div id="profile">
+                <!-- Foto -->
+                <img src="images/contato.jpg" alt="Foto da psicóloga Lucia Tomita">
+
+                <!-- Perfil -->
+                <p><strong>Lucia Tomita</strong><br>Psicóloga clínica<br>CRP 06/164901</p>
+            </div>
+            <div id="info">
+                <h3>FALE CONOSCO</h3>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5511942642493">
+                    <img src="images/whatsapp.png" alt="Whatsapp">
+                    + 55 (11) 94264-2493
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:psicologa@luciatomita.com.br">
+                    <img src="images/email.png" alt="Email">
+                    psicologa@luciatomita.com.br
+                </a>
+
+                <h3>HORÁRIO DE ATENDIMENTO</h3>
+                <p>Disponibilizo horários flexíveis para atender sua demanda individual.</p>
+            </div>
+        </section>
+        <section id="loc-info">
+            <div id="mobile-div" class="jp">
+                <div id="address">
+                    <h3>ATENDIMENTO PRESENCIAL</h3>
+                    <p>
+                        <img src="images/localizacao.png" alt="Endereço">
+                        Av. Pedro Blanco da Silva, 729 Jardim Santa Adelaide, Jundiaí-SP
+                    </p>
+                </div>
+                <div id="socials" class="jp">
+                    <a href="/contato.html">
+                        <button type="button">Entre em contato agora</button>
+                    </a>
+                    <div>
+                        <a href="https://www.instagram.com/psicologaluciatomita">
+                            <img src="images/location-instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://maps.app.goo.gl/CDmAZcmFQo18foFU6">
+                            <img src="images/location-maps.png" alt="Localização no Google Maps">
+                        </a>
+                        <a href="www.zoom.com">
+                            <img src="images/location-zoom.png" alt="Zoom">
+                        </a>
+                        <a href="https://wa.me/5511942642493">
+                            <img src="images/location-whatsapp.png" alt="WhatsApp">
+                        </a>
+                        <a href="https://meet.google.com">
+                            <img src="images/location-meet.png" alt="Google Meet">
+                        </a>
+                    </div>
+                </div>
+                <div name="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14669.093485860372!2d-46.897128!3d-23.196706000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2698d87f980d%3A0x1b468725ede9a4a2!2sBelvedere%20Plaza!5e0!3m2!1spt-BR!2sbr!4v1771553439759!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="disclaimer">
+            Atenção: Se você estiver em crise, com ideação ou planejamento suicida, entre em contato em lingua portuguesa com o Centro de Valorização da Vida - CVV (cvv.org.br) ou procure o serviço consular do Brasil no Japão ou a Linha de apoio aos latinos (lal-yokohama.org). Em caso de emergência, procure o hospital mais próximo. Havendo risco de morte, ligue imediatamente para a polícia local.
+        </p>
+        <img src="images/footer.png" alt="Certificado de site seguro">
+        <p id="politica">
+            <a href="privacy.html">Política de privacidade.</a>
+            <a href="usage.html">Termos de uso.</a>
+        </p>
+        <p>© Copyright Lucia Tomita - 2025. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+<script>
+    // Menu mobile
+    const menuBtn = document.getElementById('open-menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.querySelector('header nav');
+
+    // Abrir menu
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+    });
+
+    // Fechar menu
+    document.querySelectorAll('header nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    });
+    closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+    });
+</script>
