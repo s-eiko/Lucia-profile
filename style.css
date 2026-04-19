@@ -1,26 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* RESOLUÇÕES PARA TESTAR 
-
-    PC
-    1024 x 768
-    1280 x 720
-    1366 x 768
-    1536 x 864
-    1600 x 900
-    1920 x 1080
-
-    MOBILE
-    360 x 640
-    360 x 800
-    393 x 873
-    412 x 892
-    412 x 915
-    414 x 896
-*/
-
 /* VARIÁVEIS */
-
 :root {
     --main-text-color: #116A63;
     --main-background-color: #ffffff;
@@ -32,23 +12,9 @@
 }
 
 /* RESET */
-
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--main-background-color);
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 4rem;
-}
-
-/* DEFAULT */
-
-* {
-    font-family: var(--main-font-family);
-}
+html, body { margin: 0; padding: 0; background-color: var(--main-background-color); }
+html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+* { font-family: var(--main-font-family); }
 
 h2 {
     font-size: x-large;
@@ -57,14 +23,9 @@ h2 {
     color: var(--main-text-color);
 }
 
-section {
-    align-content: center;
-    text-align: center;
-    padding: 2.7rem 0;
-}
+section { align-content: center; text-align: center; padding: 2.7rem 0; }
 
 /* CABEÇALHO */
-
 header {
     padding: 1vw;
     background-color: var(--hero-background-color);
@@ -87,29 +48,11 @@ header nav {
     margin: 0;
 }
 
-header nav a {
-    text-decoration: none;
-    color: #083632;
-}
-
-header nav a:hover {
-    color: #D4AF37;
-}
-
-#open-menu-btn {
-    display: none;
-}
-
-#close-menu-btn {
-    display: none;
-}
+header nav a { text-decoration: none; color: #083632; }
+header nav a:hover { color: #D4AF37; }
+#open-menu-btn, #close-menu-btn { display: none; }
 
 /* HERO */
-
-#hero.jp {
-    background-image: url(images/heroJP.png);
-}
-
 #hero {
     position: relative;
     background-image: url(images/hero.jpg);
@@ -120,10 +63,8 @@ header nav a:hover {
     padding: 0;
 }
 
-#hero #hero-background {
-    position: relative;
-    padding-top: 41.67%;
-}
+#hero.jp { background-image: url(images/heroJP.png); }
+#hero #hero-background { position: relative; padding-top: 41.67%; }
 
 #hero #logo {
     position: absolute;
@@ -140,7 +81,7 @@ header nav a:hover {
     right: var(--side-margin);
     text-align: right;
     color: var(--main-text-color);
-    text-shadow: 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color);
+    text-shadow: 0 0 20px var(--hero-background-color), 0 0 20px var(--hero-background-color), 0 0 20px var(--hero-background-color), 0 0 20px var(--hero-background-color);
     overflow: hidden;
     padding: 0 0 0 10px;
     border-radius: 5px;
@@ -156,22 +97,14 @@ header nav a:hover {
     text-align: right;
     letter-spacing: -1.2px;
     color: var(--main-text-color);
-    text-shadow: 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color), 0px 0px 20px var(--hero-background-color);
+    text-shadow: 0 0 20px var(--hero-background-color), 0 0 20px var(--hero-background-color), 0 0 20px var(--hero-background-color), 0 0 20px var(--hero-background-color);
     overflow: hidden;
     border-radius: 5px;
 }
 
-#hero h2.jp  {
-    top: 23vh;
-}info
-
-#hero p.jp {
-    top: 35vh;
-}
-
-#hero-button.jp {
-    top: 60vh;
-}
+#hero h2.jp { top: 23vh; }
+#hero p.jp { top: 35vh; }
+#hero-button.jp { top: 60vh; }
 
 #hero-button {
     cursor: pointer;
@@ -186,13 +119,7 @@ header nav a:hover {
     transition: transform .3s ease;
 }
 
-#hero-button h3 {
-    font-size: x-large;
-    font-weight: 600;
-    margin: 0;
-    color: var(--main-background-color);
-}
-
+#hero-button h3 { font-size: x-large; font-weight: 600; margin: 0; color: var(--main-background-color); }
 #hero-button:hover {
     background-image: linear-gradient(to right, #d4af3700 0%, rgb(212, 175, 55) 10%, rgb(212, 175, 55) 90%, #d4af3700 100%);
     transform: scale(1.05);
@@ -207,43 +134,27 @@ header nav a:hover {
     font-size: small;
     font-weight: 500;
     letter-spacing: -1px;
-    color: var(--main-text-color); 
+    color: var(--main-text-color);
 }
 
-/* FRASE MOTIVACIONAL */
-#motivacional {
-    padding: 2.7rem;
-}
+/* MOTIVACIONAL & SOLUÇÕES */
+#motivacional { padding: 2.7rem; }
 
-/* SOLUÇÕES */
-#solutions {
-    padding: 2.7rem 1.5rem;
-    background-color: var(--highlight-color);
-}
+#solutions { padding: 2.7rem 1.5rem; background-color: var(--highlight-color); }
 
-#sol-table {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
+#sol-table { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 #sol-table div {
-    display: block;
     text-align: justify;
-    padding: 0;
-    background-color: #C5EED1;
     padding: 10px;
     font-size: small;
+    background-color: #C5EED1;
 }
 
-#sol-table div:first-child {
-    background-color: var(--main-background-color);
-}
+#sol-table div:first-child { background-color: var(--main-background-color); }
 
 /* SOBRE MIM */
-
-#about-me {
-    padding: 2.7rem;
-}
+#about-me { padding: 2.7rem; }
 
 #about-me p {
     font-size: medium;
@@ -253,9 +164,7 @@ header nav a:hover {
     margin: 0 10rem;
 }
 
-#about-me button,
-#lets-talk button,
-#socials button {
+#about-me button, #lets-talk button, #socials button {
     margin: 1rem 0 2rem 0;
     border: none;
     font-weight: 500;
@@ -267,16 +176,13 @@ header nav a:hover {
     transition: all 0.3s ease;
 }
 
-#about-me button:hover,
-#lets-talk button:hover,
-#socials button:hover {
+#about-me button:hover, #lets-talk button:hover, #socials button:hover {
     color: var(--main-text-color);
     background-color: var(--main-background-color);
     box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* EXPERIÊNCIA */
-
 #experience {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -284,64 +190,26 @@ header nav a:hover {
     padding: 2.7rem 10vw;
 }
 
-#experience img {
-    display: block;
-    margin: auto;
-    height: 17vw;
-    border-radius: 150px;
-}
-
-#experience strong {
-    font-size: 3.5vw;
-    font-weight: 600;
-    color: var(--main-text-color);
-}
-
-#experience p {
-    font-size: 1.2rem;
-    margin: 0;
-    color: #D4AF37;
-    font-weight: 500;
-}
+#experience img { display: block; margin: auto; height: 17vw; border-radius: 150px; }
+#experience strong { font-size: 3.5vw; font-weight: 600; color: var(--main-text-color); }
+#experience p { font-size: 1.2rem; margin: 0; color: #D4AF37; font-weight: 500; }
 
 /* DEPOIMENTOS */
-
-#feedback {
-    padding: 2.7rem;
-}
-
-#feedback p {
-    margin: 0 0 2rem 0;
-    font-size: small;
-}
-
-#feedback h2 {
-    margin: 0;
-}
+#feedback { padding: 2.7rem; }
+#feedback p { margin: 0 0 2rem 0; font-size: small; }
+#feedback h2 { margin: 0; }
 
 /* COMO TE AJUDO & DÚVIDAS */
-
-#services, #qa {
-    padding: 2.7rem 10vw;
-    background-color: var(--main-background-color);
-    overflow: hidden;
-}
-
-#services {
-    background-color: var(--highlight-color);
-}
-
-#services h2, #qa h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
+#services, #qa { padding: 2.7rem 10vw; background-color: var(--main-background-color); overflow: hidden; }
+#services { background-color: var(--highlight-color); }
+#services h2, #qa h2 { text-align: center; margin-bottom: 2rem; }
+#qa.jp { background-color: var(--highlight-color); }
 
 .box {
     max-height: 1.6rem;
     overflow: hidden;
     transition: all 1s;
     padding: 0.7rem 15px;
-    
     align-items: center;
     margin: .7rem auto;
     border-radius: 50px;
@@ -350,9 +218,7 @@ header nav a:hover {
     text-align: left;
 }
 
-.box.open {
-    max-height: 1000px;
-}
+.box.open { max-height: 1000px; }
 
 .box .label {
     padding: 0;
@@ -364,45 +230,16 @@ header nav a:hover {
     height: 1.2rem;
 }
 
-.box .label img {
-    height: 1rem;
-}
-
-.box .label h3 {
-    font-size: medium;
-    line-height: 1.2rem;
-    margin: 0;
-    padding: 0;
-    font-weight: 500;
-}
-
-.box p {
-    text-align: justify;
-    padding-top: 1.6rem;
-    margin: 0;
-    font-size: small;
-}
+.box .label img { height: 1rem; }
+.box .label h3 { font-size: medium; line-height: 1.2rem; margin: 0; padding: 0; font-weight: 500; }
+.box p { text-align: justify; padding-top: 1.6rem; margin: 0; font-size: small; }
 
 /* VAMOS CONVERSAR */
-
-#lets-talk {
-    padding: 0 2.7rem;
-}
-
-#lets-talk p {
-    text-align: center;
-}
-
-/* DÚVIDAS JAPÃO */
-#qa.jp {
-    background-color: var(--highlight-color);
-}
+#lets-talk { padding: 0 2.7rem; }
+#lets-talk p { text-align: center; }
 
 /* CONSULTÓRIO */
-
-.office {
-    background-color: var(--highlight-color);
-}
+.office { background-color: var(--highlight-color); }
 
 .office div {
     display: grid;
@@ -412,12 +249,9 @@ header nav a:hover {
     transition: none;
 }
 
-.office img {
-    width: 25vw;
-}
+.office img { width: 25vw; }
 
 /* CONTATO */
-
 #contact {
     background-color: var(--secondary-background-color);
     display: grid;
@@ -425,51 +259,21 @@ header nav a:hover {
     padding: 2.7rem 11vw 0 11vw;
 }
 
-#contact #links {
-    font-size: small;
-    text-align: justify;
-}
+#contact #links { font-size: small; text-align: justify; }
+#links a { color: var(--main-text-color); }
 
-#links a {
-    color: var(--main-text-color);
-}
+#profile { display: flex; justify-content: center; align-items: center; gap: 2vw; }
+#profile img { width: 10vw; height: 10vw; border-radius: 100%; }
+#profile p { text-align: left; font-weight: 500; }
 
-#profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vw;
-}
-
-#profile img {
-    width: 10vw;
-    height: 10vw;
-    border-radius: 100%;
-}
-
-#profile p {
-    text-align: left;
-    font-weight: 500;
-}
-
-#info {
-    display: block;
-    text-align: center;
-}
-
-#info img {
-    width: 1.2vw;
-}
-
-#info h3 {
-    font-weight: 700;
-    font-size: medium;
-}
+#info { display: block; text-align: center; }
+#info img { width: 1.2vw; }
+#info h3 { font-weight: 700; font-size: medium; }
 
 #info p, #info a {
     display: flex;
     font-size: small;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     font-weight: 500;
     gap: .5vw;
@@ -477,23 +281,10 @@ header nav a:hover {
     color: #000000;
 }
 
-#info a:first-of-type {
-    margin-bottom: .25vw;
-}
-
-/* LOCALIZAÇÃO E INFORMAÇÕES JAPÃO */
-#loc-info {
-    display: flex;
-    background-color: var(--secondary-background-color);
-    padding: 0 2.7rem;
-}
+#info a:first-of-type { margin-bottom: .25vw; }
 
 /* LOCALIZAÇÃO */
-
-#loc-info {
-    align-items: center;
-    justify-content: center;
-}
+#loc-info { display: flex; background-color: var(--secondary-background-color); padding: 0 2.7rem; align-items: center; justify-content: center; }
 
 #location {
     background-color: var(--secondary-background-color);
@@ -504,22 +295,10 @@ header nav a:hover {
     gap: 2vw;
 }
 
-#mobile-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2vw;
-}
+#mobile-div { display: flex; align-items: center; justify-content: center; gap: 2vw; }
 
-#address {
-    display: block;
-    align-items: center;
-}
-
-#address h3 {
-    margin: 0;
-    font-size: medium;
-}
+#address { display: block; align-items: center; }
+#address h3 { margin: 0; font-size: medium; }
 
 #address p {
     display: flex;
@@ -532,44 +311,19 @@ header nav a:hover {
     max-width: 30vw;
 }
 
-#address img {
-    width: 1.2vw;
-}
+#address img { width: 1.2vw; }
 
-#socials {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: .25rem;
-}
+#socials { display: grid; grid-template-columns: repeat(5, 1fr); gap: .25rem; }
+#socials a { text-decoration: none; }
+#socials.jp { display: block; }
+#socials img { width: 2.3rem; }
+#socials.jp button { font-size: small; }
 
-#socials a {
-    text-decoration: none;
-}
+#foto-predio img { height: 30vh; }
 
-#socials.jp {
-    display: block;
-}
-
-#socials img {
-    width: 2.3rem;
-}
-
-#socials.jp button {
-    font-size: small;
-}
-
-#foto-predio img {
-    height: 30vh;
-}
-
-#location iframe,
-#mobile-div.jp div iframe {
-    height: 30vh;
-    width: 30vw;
-}
+#location iframe, #mobile-div.jp div iframe { height: 30vh; width: 30vw; }
 
 /* FOOTER */
-
 footer {
     background-color: var(--secondary-background-color);
     padding: 0 11vw 1rem 11vw;
@@ -579,84 +333,29 @@ footer {
     flex-direction: column;
 }
 
-footer * {
-    margin: 0;
-}
+footer * { margin: 0; }
+footer p { font-size: .9vw; }
+footer #disclaimer { background-color: #ffffff; padding: 7px 15px; border-radius: 50px; }
+footer img { margin: 0 auto; width: 15vw; }
+#politica a { color: #c32a2a; text-decoration: none; }
+#politica a:hover { color: #184274; }
 
-footer p {
-    font-size: .9vw;
-}
+/* CERTIFICAÇÃO, PRIVACIDADE, USO */
+#certification, #privacy, #usage { padding: 0 2.7rem; background-color: var(--secondary-background-color); }
 
-footer #disclaimer {
-    background-color: #ffffff;
-    padding: 7px 15px;
-    border-radius: 50px;
-}
+#certification h1, #privacy h1, #usage h1 { font-size: large; font-weight: 600; text-align: center; }
+#certification iframe { width: 100%; height: 80vh; }
+#certification img { width: auto; height: 80vh; }
 
-footer img {
-    margin: 0 auto;
-    width: 15vw;
-}
+/* SOBRE (PÁGINA ABOUT) */
+#about { padding: 2rem 2.7rem; display: flex; background-color: var(--secondary-background-color); gap: 20px; }
+#about img { width: 40vw; height: fit-content; }
 
-#politica a {
-    color: #c32a2a;
-    text-decoration: none;
-}
+#about p, #privacy p, #privacy li, #usage p, #usage table { font-size: medium; text-align: justify; }
 
-#politica a:hover {
-    color: #184274;
-}
+/* DESIGN RESPONSIVO  */
 
-#certification,
-#privacy, 
-#usage {
-    padding: 0 2.7rem;
-    background-color: var(--secondary-background-color);
-}
-
-#certification h1,
-#privacy h1,
-#usage h1 {
-    font-size: large;
-    font-weight: 600;
-    text-align: center;
-}
-
-#certification iframe {
-    width: 100%;
-    height: 80vh;
-}
-
-#certification img {
-    width: auto;
-    height: 80vh;
-}
-
-#about {
-    padding: 2rem 2.7rem;
-    display: flex;
-    background-color: var(--secondary-background-color);
-    gap: 20px;
-}
-
-#about img {
-    width: 40vw;
-    height: fit-content;
-}
-
-#about p,
-#privacy p,
-#privacy li,
-#usage p,
-#usage table {
-    font-size: medium;
-    text-align: justify;
-}
-
-/* DESIGN RESPONSIVO */
-
-@media (max-width: 600px) 
-{
+@media (max-width: 600px) {
     header nav {
         height: 100%;
         width: 0;
@@ -671,65 +370,32 @@ footer img {
         display: block;
     }
 
-    header nav.active {
-        width: 50vw;
-    }
+    header nav.active { width: 50vw; }
 
-    #open-menu-btn {
-        display: block;
-        margin: 5px 10px 0 15px;
-        cursor: pointer;
-    }
+    #open-menu-btn { display: block; margin: 5px 10px 0 15px; cursor: pointer; }
+    #open-menu-btn img { height: 5vw; width: 5vw; filter: invert(25%) sepia(8%) saturate(7374%) hue-rotate(131deg) brightness(91%) contrast(94%); }
 
-    #open-menu-btn img {
-        height: 5vw;
-        width: 5vw;
-        filter: invert(25%) sepia(8%) saturate(7374%) hue-rotate(131deg) brightness(91%) contrast(94%);
-    }
+    #close-menu-btn { display: flex; position: absolute; top: 15px; right: 15px; cursor: pointer; font-family: var(--main-font-family); }
+    #close-menu-btn img { height: 5vw; width: 5vw; filter: invert(100%); }
 
-    #close-menu-btn {
-        display: flex;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        cursor: pointer;
-        font-family: var(--main-font-family);
-    }
+    header nav a { padding: 15px; text-decoration: none; color: var(--main-background-color); display: block; font-size: 4vw; }
 
-    #close-menu-btn img {
-        height: 5vw;
-        width: 5vw;
-        filter: invert(100%);
-    }
-
-    header nav a {
-        padding: 15px;
-        text-decoration: none;
-        color: var(--main-background-color);
-        display: block;
-        font-size: 4vw;
-    }
-
-    #hero{
-        background-image: linear-gradient(var(--hero-background-color), rgba(226, 226, 224, 0.3), var(--hero-background-color)),
-                          url(images/hero.jpg);
+    #hero {
+        background-image: linear-gradient(var(--hero-background-color), rgba(226, 226, 224, 0.3), var(--hero-background-color)), url(images/hero.jpg);
         background-position: 6% center;
     }
 
     #hero.jp {
-        background-image: linear-gradient(var(--hero-background-color), rgba(226, 226, 224, 0.3), var(--hero-background-color)),
-                          url(images/heroJP.png);
+        background-image: linear-gradient(var(--hero-background-color), rgba(226, 226, 224, 0.3), var(--hero-background-color)), url(images/heroJP.png);
         background-position: 8% center;
     }
 
-    #hero #logo {
-        width: 35vw;
-    }
+    #hero #logo { width: 35vw; }
 
     #hero h2 {
         top: 15vh;
-        text-shadow: 2px 2px 5px var(--hero-background-color), -2px -2px 5px var(--hero-background-color), -2px 2px 5px var(--hero-background-color), 2px -2px 5px var(--hero-background-color), 
-                     0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5);
+        text-shadow: 2px 2px 5px var(--hero-background-color), -2px -2px 5px var(--hero-background-color), -2px 2px 5px var(--hero-background-color), 2px -2px 5px var(--hero-background-color),
+                     0 0 70px rgba(226, 226, 224, 0.5), 0 0 70px rgba(226, 226, 224, 0.5), 0 0 70px rgba(226, 226, 224, 0.5), 0 0 70px rgba(226, 226, 224, 0.5);
     }
 
     #hero p {
@@ -737,427 +403,127 @@ footer img {
         font-size: 4vw;
         width: 85vw;
         text-shadow: 2px 2px 5px var(--hero-background-color), -2px -2px 5px var(--hero-background-color), -2px 2px 5px var(--hero-background-color), 2px -2px 5px var(--hero-background-color),
-                     0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5), 0px 0px 70px rgb(226, 226, 224, 0.5);
+                     0 0 70px rgba(226, 226, 224, 0.5), 0 0 70px rgba(226, 226, 224, 0.5), 0 0 70px rgba(226, 226, 224, 0.5), 0 0 70px rgba(226, 226, 224, 0.5);
     }
 
-    #hero-button h3 {
-        font-size: 4vw;
-    }
+    #hero-button h3 { font-size: 4vw; }
+    #about-me { padding: 0; }
+    #about-me p { margin: 0 15vw; }
+    #experience img { height: 40vw; }
+    #experience strong { font-size: larger; font-weight: 700; }
+    #experience p { font-size: medium; }
 
-    #about-me {
-        padding: 0;
-    }
+    #contact { display: block; padding: 2.7rem 5vw 0 5vw; gap: 0; }
+    #contact div { margin: 0; }
+    #contact #links { padding: 0 0.5rem; margin: 0 1.5rem; background-color: var(--main-background-color); border-radius: 10px; }
 
-    #about-me p {
-        margin: 0 15vw;
-    }
+    #profile { gap: 5vw; margin-bottom: 2.7rem; }
+    #profile p { font-size: large; }
+    #profile img { width: 25vw; height: 25vw; border-radius: 100%; }
 
-    #experience img {
-        height: 40vw;
-    }
+    #info img { width: 4vw; }
+    #info h3 { margin-bottom: 2vw; }
+    #info p, #info a { line-height: 1.5; gap: 1vw; }
+    #info a:first-of-type { margin-bottom: 2vw; }
 
-    #experience strong {
-        font-size: larger;
-        font-weight: 700;
-    }
+    #location { display: block; padding: 0; }
 
-    #experience p {
-        font-size: medium;
-    }
+    #mobile-div { display: grid; grid-template-columns: 2fr 1fr; padding: 1rem 10vw; gap: 3vw; }
+    #address { align-content: center; }
+    #address h3 { margin: 0; }
+    #address p { gap: 2vw; margin-bottom: 5vw; max-width: 100%; }
+    #address img { width: 5vw; margin: 0; }
 
-    #contact {
-        display: block;
-        padding: 2.7rem 5vw 0 5vw;
-        gap: 0;
-    }
+    #socials { justify-content: center; display: flex; gap: 1vw; }
+    #socials img { width: 7vw; }
+    #foto-predio img { width: 100%; height: auto; }
+    #location iframe { height: 15vh; width: 80vw; }
 
-    #contact div {
-        margin: 0;
-    }
+    footer { padding: 1rem 2.5vw 0 2.5vw; }
+    footer #disclaimer { padding: 7px 2vw; border-radius: 25px; }
+    footer img { width: 30vw; }
+    footer p { font-size: 2vw; }
 
-    #contact #links {
-        padding: 0 0.5rem;
-        margin: 0 1.5rem;
-        background-color: var(--main-background-color);
-        border-radius: 10px;
-    }
-    
-    #profile {
-        gap: 5vw;
-        margin-bottom: 2.7rem;
-    }
+    .office { border-radius: 10px; margin: 0; overflow: hidden; }
+    .office div { display: flex; transition: transform 0.5s ease-in-out; width: 80vw; }
+    .office img { width: inherit; object-fit: contain; display: block; }
 
-    #profile p {
-        font-size: large;
-    }
-    
-    #profile img {
-        width: 25vw;
-        height: 25vw;
-        border-radius: 100%;
-    }
-    
-    #info img {
-        width: 4vw;
-    }
-    
-    #info h3 {
-        margin-bottom: 2vw;
-    }
-    
-    #info p, #info a {
-        line-height: 2vw;
-        gap: 1vw;
-    }
-    
-    #info a:first-of-type {
-        margin-bottom: 2vw;
-    }
+    /* JAPÃO - MOBILE */
+    #hero h2.jp { top: 7vh; }
+    #hero p.jp { top: 45vh; }
+    #hero-button.jp { top: 65vh; }
 
-    #location {
-        display: block;
-        padding: 0;
-    }
+    #loc-info { display: block; }
+    #mobile-div.jp { display: block; gap: 10px; }
+    #socials.jp button { margin: 0 0 10px 0; }
+    #mobile-div.jp div iframe { height: 15vh; width: 100%; }
+    #about { display: block; }
 
-    #mobile-div {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        padding: 1rem 10vw;
-        gap: 3vw;
-    }
-
-    #address {
-        align-content: center;
-    }
-
-    #address h3 {
-        margin: 0;
-    }
-
-    #address p {
-        gap: 2vw;
-        margin-bottom: 5vw;
-    }
-
-    #address img {
-        width: 5vw;
-        margin: 0;
-    }
-
-    #socials {
-        justify-content: center;
-        display: flex;
-        gap: 1vw;
-    }
-
-    #socials img {
-        width: 7vw;
-    }
-
-    #foto-predio img {
-        width: 100%;
-        height: auto;
-    }
-
-    #location iframe {
-        height: 15vh;
-        width: 80vw;
-    }
-
-    footer {
-        padding: 1rem 2.5vw 0 2.5vw;
-    }
-
-    footer #disclaimer {
-        padding: 7px 2vw;
-        border-radius: 25px;
-    }
-
-    footer img {
-        width: 30vw;
-    }
-
-    footer p {
-        font-size: 2vw;
-    }
-
-    .office {
-        border-radius: 10px;
-        margin: 0;
-        overflow: hidden;
-    }
-
-    .office div {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        width: 80vw;
-    }
-
-    .office img {
-        width: inherit;
-        object-fit: contain;
-        display: block;
-    }
-
-    /* JAPÃO */
-
-    #hero h2.jp  {
-        top: 7vh;
-    }
-
-    #hero p.jp {
-        top: 45vh;
-    }
-
-    #hero-button.jp {
-        top: 65vh;
-    }
-
-    #loc-info {
-        display: block;
-    }
-
-    #mobile-div.jp {
-        display: block;
-        gap: 10px;
-    }
-
-    #address p {
-        max-width: 100%;
-    }
-
-    #socials.jp button {
-        margin: 0 0 10px 0;
-    }
-
-    #mobile-div.jp div iframe {
-        height: 15vh;
-        width: 100%;
-    }
-
-    #about {
-        display: block;
-    }
+    #certification img { width: 100%; height: auto; }
 }
 
-@media (min-width: 601px) and (max-width: 1000px) 
-{
-    #hero h2 {
-        top: 20vh;
-    }
+@media (min-width: 601px) and (max-width: 1000px) {
+    #hero h2 { top: 20vh; }
+    #hero p { width: 75vw; }
+    #hero-button h3 { font-size: 3vw; }
+    #about-me { margin: 0; }
+    #experience img { height: 25vw; }
 
-    #hero p {
-        width: 75vw;
-    }
+    #contact { padding: 2.7rem 5vw 0 5vw; }
+    #info h3 { margin-bottom: 2vw; }
+    #info p, #info a { font-size: medium; line-height: 2vw; gap: .5vw; }
+    #info a:first-of-type { margin-bottom: 2.5vw; }
 
-    #hero-button h3 {
-        font-size: 3vw;
-    }
+    #location { padding: 2rem 4vw; gap: 1vw; }
+    #address p { font-size: medium; }
+    #address img { width: 1.2vw; }
+    #socials { gap: .25vw; }
+    #socials img { width: 5vw; }
+    #foto-predio img { height: 20vh; }
+    #location iframe { height: 20vh; width: 100%; }
 
-    #about-me {
-        margin: 0;
-    }
+    footer { padding: 0 5vw 1rem 5vw; }
+    footer p { font-size: x-small; }
+    footer img { width: 25vw; }
 
-    #experience img {
-        height: 25vw;
-    }
-
-    #contact {
-        padding: 2.7rem 5vw 0 5vw;
-    }
-
-    #info h3 {
-        margin-bottom: 2vw;
-    }
-
-    #info p, #info a {
-        font-size: medium;
-        line-height: 2vw;
-        gap: .5vw;
-    }
-
-    #info a:first-of-type {
-        margin-bottom: 2.5vw;
-    }
-
-    #location {
-        padding: 2rem 4vw;
-        gap: 1vw;
-    }
-
-    #address p {
-        font-size: medium;
-    }
-
-    #address img {
-        width: 1.2vw;
-    }
-
-    #socials {
-        gap: .25vw;
-    }
-
-    #socials img {
-        width: 5vw;
-    }
-
-    #foto-predio img {
-        height: 20vh;
-    }
-
-    #location iframe {
-        height: 20vh;
-        width: 100%;
-    }
-
-    footer {
-        padding: 0 5vw 1rem 5vw;
-    }
-
-    footer p {
-        font-size: x-small;
-    }
-
-    footer img {
-        width: 25vw;
-    }
-
-    /* JAPÃO */
-
-    #hero h2.jp  {
-        top: 25vh;
-    }
-
-    #hero p.jp {
-        top: 40vh;
-    }
-
-    #hero-button.jp {
-        top: 60vh;
-    }
-
-    #socials.jp img {
-        width: 3vw;
-    }
-
-    #mobile-div.jp div iframe {
-        height: 100%;
-        width: 20vw;
-    }
-
-    #about img {
-        width: 30vw;
-    }
+    /* JAPÃO - TABLET */
+    #hero h2.jp { top: 25vh; }
+    #hero p.jp { top: 40vh; }
+    #hero-button.jp { top: 60vh; }
+    #socials.jp img { width: 3vw; }
+    #mobile-div.jp div iframe { height: 100%; width: 20vw; }
+    #about img { width: 30vw; }
 }
 
-@media (min-width: 1001px) and (max-width: 1300px) 
-{
-    header p {
-        font-size: 1.55vw;
-    }
-
-    #hero p {
-        width: 75vw;
-    }
-
-    footer {
-        padding: 0 5vw 1rem 5vw;
-    }
-
-    footer p {
-        font-size: 1vw;
-    }
-
-    #about img {
-        width: 20vw;
-    }
+@media (min-width: 1001px) and (max-width: 1300px) {
+    header a { font-size: 1.20vw; }
+    #hero p { width: 75vw; }
+    footer { padding: 0 5vw 1rem 5vw; }
+    footer p { font-size: 1vw; }
+    #about img { width: 20vw; }
 }
 
-@media (min-width: 1301px) and (max-width: 5000px) {
-    #hero h2 {
-        font-size: 2.2vw;
-    }
+@media (min-width: 1301px) {
+    #hero h2 { font-size: 2.2vw; }
+    #hero p { font-size: 1.3vw; }
+    #hero p.jp { top: 40vh; }
+    #hero span { font-size: 1.1vw; }
+    #hero-button h3 { font-size: 1.2vw; }
 
-    #hero p {
-        font-size: 1vw;
-    }
+    h2 { font-size: 2vw; }
+    h3 { font-size: 1.5vw; }
 
-    #hero p.jp {
-        top: 40vh;
-    }
+    #motivacional p, #solutions p, #about-me p, #feedback p, #lets-talk p, #sol-table div, .box p { font-size: .8vw; }
+    #about-me button, #lets-talk button, #socials.jp button { font-size: .75vw; }
+    .box .label h3 { font-size: .9vw; }
+    #profile p { font-size: 1vw; }
+    #links p { font-size: .7vw; }
 
-    #hero span {
-        font-size: x-large;
-    }
+    #loc-info { padding: 0 10rem; }
+    #loc-info h3 { font-size: 1vw; }
+    #loc-info a, #loc-info p, #mobile-div a, #mobile-div p, #contact a, #contact p { font-size: .7vw; }
 
-    #hero-button h3 {
-        font-size: 1.2vw;
-    }
-
-    h2 {
-        font-size: 2vw;
-    }
-
-    h3 {
-        font-size: 1.5vw;
-    }
-
-    #motivacional p,
-    #solutions p,
-    #about-me p,
-    #feedback p,
-    #lets-talk p,
-    #sol-table div,
-    .box p {
-        font-size: .8vw;
-    }
-
-    #about-me button,
-    #lets-talk button,
-    #socials.jp button {
-        font-size: .75vw;
-    }
-
-    .box .label h3 {
-        font-size: .9vw;
-    }
-
-    #profile p {
-        font-size: 1vw;
-    }
-
-    #links p {
-        font-size: .7vw;
-    }
-
-    #loc-info {
-        padding: 0 10rem;
-    }
-
-    #loc-info h3 {
-        font-size: 1vw;
-    }
-
-    #loc-info a,
-    #loc-info p,
-    #mobile-div a,
-    #mobile-div p,
-    #contact a,
-    #contact p {
-        font-size: .7vw;
-    }
-
-    footer p {
-        font-size: .6vw;
-    }
-
-    #certification h1 {
-        font-size: x-large;
-        font-weight: 600;
-        text-align: center;
-    }
-
-    #about img {
-        width: 15vw;
-    }
+    footer p { font-size: .6vw; }
+    #certification h1 { font-size: x-large; font-weight: 600; text-align: center; }
+    #about img { width: 15vw; }
 }
