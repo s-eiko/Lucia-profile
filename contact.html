@@ -20,16 +20,120 @@
             <a href="#contact">CONTATO</a>
         </nav>
     </header>
-    <main id="contact">
-        <h1>CONTATO</h1>
-        <h2>Utilize uma das opções abaixo para agendar consultas, sanar dúvidas, solicitar atendimento ou receber orçamento. Assim que possível, farei contato. Se preferir a resposta por E-mail, peço a gentileza de conferir a caixa de E-mail informado no formulário.</h2>
-        <a href="https://wa.me/5511942642493">
-            <button type="button">
-                <img src="images/whatsapp.png" alt="WhatsApp">
-                Contatar pelo WhatsApp
-            </button>
-        </a>
+    <main>
+        <section id="contactpage">
+            <h1>CONTATO</h1>
+            <h2>Utilize uma das opções abaixo para agendar consultas, sanar dúvidas, solicitar atendimento ou receber orçamento. Assim que possível, farei contato. Se preferir a resposta por E-mail, peço a gentileza de conferir a caixa de E-mail informado no formulário.</h2>
+            <a href="https://wa.me/5511942642493">
+                <button type="button">
+                    <img src="images/whatsapp.png" alt="WhatsApp">
+                    Contatar pelo WhatsApp
+                </button>
+            </a>
+        </section>
+        <section id="contactform">
+            <form action="https://formspree.io/f/xeevrkqp" method="POST">
+                <input type="hidden" name="_language" value="pt-BR" />
+                <!-- Nome -->
+                <label><strong>Nome</strong><span>*</span></label><br>
+                <input type="text" id="Nome" name="Nome" placeholder="Nome" required>
+                <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Sobrenome" required><br>
+                <!-- Telefone -->
+                <label for="Celular"><strong>Telefone/WhatsApp (DDI + código de área + número):</strong><span>*</span></label><br>
+                <input type="tel" id="Celular" name="Celular" placeholder="+XX XX XXXXXXXXX" required><br>
+                <!-- Email -->
+                <label for="Email"><strong>E-mail:</strong><span>*</span></label><br>
+                <input type="email" id="Email" name="Email" placeholder="seuemail@gmail.com" required><br>
+                <!-- Preferência -->
+                <label for="Preferencia"><strong>Prefere receber minha resposta por e-mail ou whatsapp?</strong><span>*</span></label><br>
+                <input type="radio" id="emailop" name="Preferencia" value="Email" required><label for="emailop">E-mail</label><br>
+                <input type="radio" id="whatsop" name="Preferencia" value="WhatsApp" required><label for="whatsop">WhatsApp</label><br>
+                <!-- Formulário sobre serviço -->
+                <label for="Formulario"><strong>Utilize o formulário abaixo para agendar consultas, sanar dúvidas, solicitar agendamento ou receber um orçamento personalizado</strong><span>*</span></label><br>
+                <textarea name="Formulario" id="Formulario" required></textarea><br>
+                <!-- Como posso ajudar -->
+                <label for="Ajuda"><strong>Como posso te ajudar? O que você sente ou precisa?</strong></label><br>
+                <textarea name="Ajuda" id="Ajuda"></textarea><br>
+                <!-- Termos -->
+                <label><strong>Política de privacidade e termo de uso</strong><span>*</span></label><br>
+                <input type="checkbox" value="Li e concordo" required>
+                <label> Li e concordo</label><br>
+                <!-- Botão de envio -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="contact">
+            <div id="profile">
+                <!-- Foto -->
+                <img src="images/contato.jpg" alt="Foto da psicóloga Lucia Tomita">
+
+                <!-- Perfil -->
+                <p><strong>Lucia Tomita</strong><br>Psicóloga clínica<br>CRP 06/164901</p>
+            </div>
+            <div id="info">
+                <h3>FALE CONOSCO</h3>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5511942642493">
+                    <img src="images/whatsapp.png" alt="Whatsapp">
+                    + 55 (11) 94264-2493
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:psicologa@luciatomita.com.br">
+                    <img src="images/email.png" alt="Email">
+                    psicologa@luciatomita.com.br
+                </a>
+
+                <h3>HORÁRIO DE ATENDIMENTO</h3>
+                <p>Disponibilizo horários flexíveis para atender sua demanda individual.</p>
+            </div>
+        </section>
+        <section id="loc-info">
+            <div id="mobile-div" class="jp">
+                <div id="address">
+                    <h3>ATENDIMENTO PRESENCIAL</h3>
+                    <p>
+                        <img src="images/localizacao.png" alt="Endereço">
+                        Av. Pedro Blanco da Silva, 729 Jardim Santa Adelaide, Jundiaí-SP
+                    </p>
+                </div>
+                <div id="socials" class="jp">
+                    <div>
+                        <a href="https://www.instagram.com/psicologaluciatomita">
+                            <img src="images/location-instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://maps.app.goo.gl/CDmAZcmFQo18foFU6">
+                            <img src="images/location-maps.png" alt="Localização no Google Maps">
+                        </a>
+                        <a href="www.zoom.com">
+                            <img src="images/location-zoom.png" alt="Zoom">
+                        </a>
+                        <a href="https://wa.me/5511942642493">
+                            <img src="images/location-whatsapp.png" alt="WhatsApp">
+                        </a>
+                        <a href="https://meet.google.com">
+                            <img src="images/location-meet.png" alt="Google Meet">
+                        </a>
+                    </div>
+                </div>
+                <div name="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14669.093485860372!2d-46.897128!3d-23.196706000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2698d87f980d%3A0x1b468725ede9a4a2!2sBelvedere%20Plaza!5e0!3m2!1spt-BR!2sbr!4v1771553439759!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <p id="disclaimer">
+            Atenção: Se você estiver em crise, com ideação ou planejamento suicida, ligue para o Centro de Valorização da Vida - CVV (188). Em caso de emergência, procure o hospital mais próximo. Havendo risco de morte, ligue imediatamente para o SAMU (192), ou para o Corpo de Bombeiros (193).
+        </p>
+        <img src="images/footer.png" alt="Certificado de site seguro">
+        <p id="politica">
+            <a href="privacy.html">Política de privacidade.</a>
+            <a href="usage.html">Termos de uso.</a>
+        </p>
+        <p>© Copyright Lucia Tomita - 2025. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
 <script>

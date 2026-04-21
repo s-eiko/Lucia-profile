@@ -4,366 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucia Tomita - Psicóloga Clínica</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-</head>
-<body>
-    <header>
-        <!-- Botão Hambúrguer -->
-        <div id="open-menu-btn"><img src="images/menu.svg" alt="Abrir Menu"></div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-        <!-- Barra de navegação -->
-        <nav>
-            <div id="close-menu-btn">
-                <img src="images/fechar.svg" alt="Fechar Menu">
-            </div>
-            <a href="#hero">INÍCIO</a>
-            <a href="#about-me">SOBRE MIM</a>
-            <a href="#feedback">DEPOIMENTOS</a>
-            <a href="#services">COMO TE AJUDO</a>
-            <a href="#qa">DÚVIDAS</a>
-            <a href="#contact">CONTATO</a>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <!-- Logo -->
-            <img src="images/logo.png" alt="Logo da psicóloga Lucia Tomita" id="logo">
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-            <!-- Frase principal -->
-            <h2>Inicie o quanto antes a mudança que você merece!</h2>
-
-            <!-- Frase secundária -->
-            <p>Atendimento psicológico presencial em Jundiaí-SP e online para brasileiros em qualquer lugar do mundo!</p>
-
-            <!-- Botão de marcar consulta -->
-            <div onclick="window.location.href='wa.me/5511942642493'" id="hero-button">
-                <h3>Marque sua consulta</h3>
-            </div>
-
-            <!-- Faixa -->
-            <span>Psicoterapia individual</span>
-
-            <!-- Background -->
-            <img id="hero-background" src="images/hero.jpg" alt="Foto da psicóloga Lucia Tomita" style="visibility: hidden; width: 100%;">
-        </section>
-        <section id="about-me">
-
-            <!-- Título -->
-            <h2>SOBRE MIM</h2>
-
-            <!-- Sobre -->
-            <p>Olá, sou Lucia Tomita, <strong>psicóloga clínica</strong>, e atuo na área do desenvolvimento humano há <strong>mais de 22 anos</strong>. Realizo atendimentos psicológicos individuais a <strong>crianças, adolescentes, adultos e idosos</strong>. Meu consultório fica no bairro Jardim Santa Adelaide, em Jundiaí-SP. Sou filha de imigrantes japoneses, bilíngue (português/japonês), graduada em Psicologia, com especialização em <strong>Psicologia Clínica no Japão</strong> e em formação em <strong>Terapia Cognitivo-Comportamental (TCC)</strong>. Minha prática é pautada na ética, empatia e <strong>escuta qualificada</strong>, com base na abordagem da TCC e na <strong>psicoterapia breve</strong>, por meio de atendimentos presencial e online. Agora que você conhece um pouco da minha trajetória, fico à disposição para conhecer a sua e <strong>caminhar ao seu lado</strong> nesse processo de autoconhecimento e transformação.</p>
-
-            <!-- Botão para Sobre Mim -->
-            <a href="about.html">
-                <button type="button">Me conheça mais</button>
-            </a>
-        </section>
-        <section id="experience">
-            <!-- Imagem -->
-            <img src="images/experiencia.jpg" alt="Foto da psicóloga Lucia Tomita">
-
-            <!-- Dados -->
-            <div>
-                <p><strong>+7000</strong></p>
-                <p>Horas de Aperfeiçoamento na Prática Clínica</p>
-
-                <p><strong>+22</strong></p>
-                <p>Anos de Experiência</p>
-            </div>
-        </section>
-        <section id="feedback">
-            <!-- Título -->
-            <h2>DEPOIMENTOS</h2>
-
-            <!-- Subtítulo -->
-            <p>Pessoas reais, mudanças reais. Veja alguns depoimentos dos meus atendimentos.</p>
-
-            <!-- Carrossel de avaliações -->
-            <script src="https://elfsightcdn.com/platform.js" async></script>
-            <div class="elfsight-app-ec44df5f-a023-4821-8545-a9101158d6f8" data-elfsight-app-lazy></div>
-
-            <!-- Disclaimer -->
-            <p>Todos os depoimentos foram previamente autorizados conforme nota técnica 01/2022 do Conselho Federal de Psicologia.</p>
-        </section>
-        <section id="services">
-            <!-- Título -->
-            <h2>COMO TE AJUDO</h2>
-
-            <div class="accordion">
-
-                <!-- Individual -->
-                <div class="box">
-                    <div class="label">
-                        <img src="images/mais.png" alt="Ver mais">
-                        <h3>Psicoterapia Individual</h3>
-                    </div>
-                    <p>
-                        A psicoterapia individual é um processo terapêutico profundo e transformador, que tem como objetivo auxiliá-lo a compreender melhor suas emoções, pensamentos e comportamentos. Através de uma escuta especializada, empática e ética, ofereco suporte humano e personalizado, respeitando o seu ritmo e as suas necessidades. Na primeira sessão, identificaremos as suas principais demandas e definiremos juntos os objetivos e metas do seu processo terapêutico. A psicoterapia pode trazer mudanças eficazes e duradouras, promovendo autoconhecimento, bem-estar emocional e qualidade de vida.
-                    </p>
-                </div>
-
-                <!-- Online -->
-                <div class="box">
-                    <div class="label">
-                        <img src="images/mais.png" alt="Ver mais">
-                        <h3>Psicoterapia Online</h3>
-                    </div>
-                    <p>
-                        Ideal para quem tem rotina intensa, ou vive em outro país, ou vive em regiões isoladas, a terapia online oferece flexibilidade de horários, elimina deslocamentos e permite que você se cuide no conforto do seu espaço — seja em casa, no trabalho, ou em qualquer outro lugar. Com a mesma eficácia do atendimento presencial, você conta com um ambiente sigiloso, ético e acolhedor. Mais praticidade, sem abrir mão da qualidade no cuidado com sua saúde mental. É recomendável que se organize em um local privativo, que se sinta confortável e seguro para falar. Para garantir a qualidade da sessão, tenha uma boa conexão de internet e utilize fones de ouvido.
-                    </p>
-                </div>
-
-                <!-- Breve -->
-                <div class="box">
-                    <div class="label">
-                        <img src="images/mais.png" alt="Ver mais">
-                        <h3>Psicoterapia Breve</h3>
-                    </div>
-                    <p>
-                        A Psicoterapia Breve é uma abordagem terapêutica focada, com duração previamente definida, que busca promover mudanças significativas em um curto espaço de tempo. Seu diferencial está no trabalho centrado em um conflito psíquico específico, como crises, lutos, dificuldades nos relacionamentos ou momentos de transição. A Psicoterapia Breve é ideal para quem busca foco, intensidade e transformação em um tempo delimitado.
-                    </p>
-                </div>
-
-                <!-- TCC -->
-                <div class="box">
-                    <div class="label">
-                        <img src="images/mais.png" alt="Ver mais">
-                        <h3>Psicoterapia Cognitivo Comportamental (TCC)</h3>
-                    </div>
-                    <p>
-                        Psicoterapia Cognitivo-Comportamental é uma abordagem focada em identificar e transformar padrões de pensamento e comportamento que causam sofrimento. Baseia-se na ideia de que nossos pensamentos influenciam diretamente nossas emoções e ações. Com escuta atenta e estratégias práticas, trabalhamos juntos para transformar padrões que trazem sofrimento, promovendo mais equilíbrio, bem-estar e qualidade de vida no seu dia a dia.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section id="qa">
-            <!-- Título -->
-            <h2>DÚVIDAS</h2>
-
-            <div class="accordion">
-                <!-- Plano de Saúde -->
-                <div class="box">
-                    <div class="label">
-                        <img src="images/mais.png" alt="Ver mais">
-                        <h3>Aceita plano de saúde</h3>
-                    </div>
-                    <p>
-                        Nossas consultas são particulares. No entanto, a maioria dos meus clientes tem plano de saúde e optam pelo atendimento particular, tendo o ressarcimento através do sistema de reembolso, um benefício regulamentado pela ANS (Agência Nacional de Saúde Suplementar). Após o pagamento, emito recibos e relatórios necessários para que você receba o reembolso pelo seu plano de saúde. O reembolso pode chegar a 100% do valor pago. Para descobrir o valor de reembolso com o psicólogo, consulte a central de atendimento do seu plano de saúde para mais informações. É um direito seu escolher por quem vocẽ quer ser atendido! E a quantidade de sessões é ilimitada.
-                    </p>
-                </div>
-
-                <!-- Horário de funcionamento -->
-                <div class="box">
-                    <div class="label">
-                        <img src="images/mais.png" alt="Ver mais">
-                        <h3>Horário de funcionamento</h3>
-                    </div>
-                    <p>
-                        De segunda a sexta das 9:00 às 21:00h, sábado das 9:00 às 12:00h. Cada sessão tem entre 50 a 60 minutos de duração. Os atendimentos devem ser previamente agendados por telefone ou whatsapp.
-                    </p>
-                </div>
-
-                <!-- Público atendido -->
-                <div class="box">
-                    <div class="label">
-                        <img src="images/mais.png" alt="Ver mais">
-                        <h3>Público atendido</h3>
-                    </div>
-                    <p>
-                        Atendo adolescentes, adultos, idosos e a brasileiros que moram fora do Brasil.
-                    </p>
-                </div>
-
-                <!-- Funcionamento da terapia -->
-                <div class="box">
-                    <div class="label">
-                        <img src="images/mais.png" alt="Ver mais">
-                        <h3>Como funciona a psicoterapia?</h3>
-                    </div>
-                    <p>
-                        Na psicoterapia individual você receberá uma atenção exclusiva e personalizada. De modo geral, a psicoterapia acontece de forma presencial ou online, com sessões semanais de 50 a 60 minutos. No entanto, esses acordos podem ser ajustados conforme suas necessidade e possibilidades. Além da escuta e das intervenções durante a conversa, o processo terapêutico pode incluir o uso de avaliações psicológicas caso necessário, e sempre com sua concordância prévia. Quando necessário, o processo e o objetivo é previamente explicado, com clareza.
-                    </p>
-                </div>
-
-                <!-- Formas de pagamento -->
-                <div class="box">
-                    <div class="label">
-                        <img src="images/mais.png" alt="Ver mais">
-                        <h3>Formas de pagamento</h3>
-                    </div>
-                    <p>
-                        O pagamento pode ser feito por pix e transferência bancária.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="office">
-            <!-- Título -->
-            <h2>CONSULTÓRIO</h2>
-
-            <!-- Imagens -->
-            <div name="gallery">
-                <img src="images/consultorio1.jpg" alt="Imagem do consultório">
-                <img src="images/consultorio2.jpg" alt="Imagem do consultório">
-                <img src="images/consultorio3.jpg" alt="Imagem do consultório">
-            </div>
-        </section>
-        <section id="contact">
-            <div id="profile">
-                <!-- Foto -->
-                <img src="images/contato.jpg" alt="Foto da psicóloga Lucia Tomita">
-
-                <!-- Perfil -->
-                <p><strong>Lucia Tomita</strong><br>Psicóloga clínica<br>CRP 06/164901</p>
-            </div>
-            <div id="info">
-                <h3>FALE CONOSCO</h3>
-
-                <!-- WhatsApp -->
-                <a href="https://wa.me/5511942642493">
-                    <img src="images/whatsapp.png" alt="Whatsapp">
-                    + 55 (11) 94264-2493
-                </a>
-
-                <!-- Email -->
-                <a href="mailto:psicologa@luciatomita.com.br">
-                    <img src="images/email.png" alt="Email">
-                    psicologa@luciatomita.com.br
-                </a>
-
-                <h3>HORÁRIO DE ATENDIMENTO</h3>
-                <p>Segunda a sexta 9:00 às 21:00h.</p>
-                <p>Atendimento somente com hora marcada.</p>
-            </div>
-        </section>
-        <section id="location">
-            <div id="mobile-div">
-                <div id="address">
-                    <h3>CONSULTÓRIO</h3>
-                    <p>
-                        <img src="images/localizacao.png" alt="Endereço">
-                        Av. Pedro Blanco da Silva, 729 Jardim Santa Adelaide, Jundiaí-SP
-                    </p>
-                    <div id="socials">
-                        <a href="https://www.instagram.com/psicologaluciatomita">
-                            <img src="images/location-instagram.png" alt="Instagram">
-                        </a>
-                        <a href="https://maps.app.goo.gl/CDmAZcmFQo18foFU6">
-                            <img src="images/location-maps.png" alt="Localização no Google Maps">
-                        </a>
-                        <a href="www.zoom.com">
-                            <img src="images/location-zoom.png" alt="Zoom">
-                        </a>
-                        <a href="https://wa.me/5511942642493">
-                            <img src="images/location-whatsapp.png" alt="WhatsApp">
-                        </a>
-                        <a href="https://meet.google.com">
-                            <img src="images/location-meet.png" alt="Google Meet">
-                        </a>
-                    </div>
-                </div>
-                <div id="foto-predio">
-                    <img src="images/location-predio.png" alt="Foto do prédio do consultório">
-                </div>
-            </div>
-            <div name="maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14669.093485860372!2d-46.897128!3d-23.196706000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2698d87f980d%3A0x1b468725ede9a4a2!2sBelvedere%20Plaza!5e0!3m2!1spt-BR!2sbr!4v1771553439759!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p id="disclaimer">
-            Atenção: Se você estiver em crise, com ideação ou planejamento suicida, ligue para o Centro de Valorização da Vida - CVV (188). Em caso de emergência, procure o hospital mais próximo. Havendo risco de morte, ligue imediatamente para o SAMU (192), ou para o Corpo de Bombeiros (193).
-        </p>
-        <img src="images/footer.png" alt="Certificado de site seguro">
-        <p id="politica">
-            <a href="privacy.html">Política de privacidade.</a>
-            <a href="usage.html">Termos de uso.</a>
-        </p>
-        <p>© Copyright Lucia Tomita - 2025. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
-<script>
-    // País default = "BR"
-    var country = 'BR';
-
-    // Código de países asiáticos pertos do Japão
-    var asia = ["BD", "IO", "BT", "BN", "KH", "CN", "CC", "HK", "IN", "ID", "JP", "LA", "MO", "MY", "MN", "MM", "NP", "KP", "PK", "PH", "SG", "KR", "LK", "TW", "TH", "VN", "YE"];
-
-    try {
-        // Identificando país do visitante
-        $.getJSON('https://geolocation-db.com/json/')
-            .done (function(location) {
-                country = location.country_code;
-            }
-        )
-
-        // Se estiver perto do Japão = JP, se não = BR
-        // A requisição ajax pode retornar uma localização pouco exata, por isso considera-se visitantes de outros países asiáticos como japoneses
-        if ($.inArray(country, asia) === 1) country = "JP";
-    } catch (e) {
-        console.log("Error fetching location");
-    }
-
-    // Dinamizando o menu sanfona
-    jQuery(".box .label").click(function(){ 
-	    if (jQuery(this).parent().hasClass("open")) {
-	    	jQuery(this).parent().removeClass("open");
-            jQuery(this).children("img")
-                .attr("src", "images/mais.png")
-                .attr("alt", "Ver mais");
-	    } else {
-		    jQuery(".box").removeClass("open")
-                .find(".label img")
-                .attr("src", "images/mais.png")
-                .attr("alt", "Ver mais");
-
-            jQuery(this).parent().addClass("open");
-
-            jQuery(this).children("img")
-                .attr("src", "images/menos.png")
-                .attr("alt", "Ver menos");
-	    }
-    });
-
-    // Animando carrossel de imagens
-    const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    if (windowWidth <= 600) {
-        const slides = document.querySelector('.office div');
-        const imagens = document.querySelectorAll('.office img');
-
-        let index = 0;
-
-        function mostrarSlide() {
-            slides.style.transform = `translateX(${-index * 80}%)`;
+        body {
+            background-color: #e2e2e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: "Poppins", sans-serif;
+            color: #116A63;
         }
 
-        setInterval(() => {
-            index = (index + 1) % imagens.length;
-            mostrarSlide();
-        }, 3000);
-    }
+        /* ── TELA DE CARREGAMENTO ── */
+        #loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            transition: opacity .4s ease;
+        }
 
-    // Menu mobile
-    const menuBtn = document.getElementById('open-menu-btn');
-    const closeBtn = document.getElementById('close-menu-btn');
-    const mobileMenu = document.querySelector('header nav');
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(17, 106, 99, 0.2);
+            border-top-color: #116A63;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
 
-    // Abrir menu
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.add('active');
-    });
+        @keyframes spin { to { transform: rotate(360deg); } }
 
-    // Fechar menu
-    document.querySelectorAll('header nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
+        #loading p {
+            font-size: 13px;
+            opacity: 0.6;
+            font-weight: 400;
+        }
+
+        /* ── TELA DE ESCOLHA (fallback) ── */
+        #choose {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 28px;
+            text-align: center;
+            padding: 0 24px;
+            animation: fadeIn .5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        #choose h1 {
+            font-size: clamp(14px, 3vw, 17px);
+            font-weight: 500;
+            color: #555;
+            max-width: 420px;
+            line-height: 1.6;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 26px;
+            border: none;
+            border-radius: 50px;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,.15);
+        }
+
+        .btn-br {
+            background-color: #116A63;
+            color: #fff;
+        }
+
+        .btn-jp {
+            background-color: #ffffff;
+            color: #116A63;
+            border: 2px solid #116A63;
+        }
+
+        .btn span.flag { font-size: 20px; line-height: 1; }
+    </style>
+</head>
+<body>
+
+    <!-- Estado: detectando localização -->
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Carregando...</p>
+    </div>
+
+    <!-- Estado: escolha manual (mostrado se API falhar OU após timeout) -->
+    <div id="choose">
+        <h1>Selecione a versão do site que deseja acessar:</h1>
+        <div class="btn-group">
+            <a href="indexBR.html" class="btn btn-br">
+                <span class="flag">🇧🇷</span> Versão Brasil
+            </a>
+            <a href="indexJP.html" class="btn btn-jp">
+                <span class="flag">🇯🇵</span> Versão Japão
+            </a>
+        </div>
+    </div>
+
+    <script src="version.js"></script>
+    <script>
+        SiteVersion.init(function (v) {
+            window.location.replace(v === 'JP' ? 'indexJP.html' : 'indexBR.html');
         });
-    });
-    closeBtn.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-    });
-</script>
+    </script>
+</body>
+</html>

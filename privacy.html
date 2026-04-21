@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Política de privacidade</title>
+    <script src="version.js"></script>
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
             <div id="close-menu-btn">
                 <img src="images/fechar.svg" alt="Fechar Menu">
             </div>
-            <a href="DINAMIZAR">INÍCIO</a>
+            <a href="">INÍCIO</a>
             <a href="#contact">CONTATO</a>
         </nav>
     </header>
@@ -204,5 +205,10 @@
     });
     closeBtn.addEventListener('click', () => {
         mobileMenu.classList.remove('active');
+    });
+
+    const dinamicnav = document.querySelector('a');
+    SiteVersion.init(function(v) {
+        dinamicnav.href = v === 'BR' ? 'indexBR.html' : 'indexJP.html';
     });
 </script>

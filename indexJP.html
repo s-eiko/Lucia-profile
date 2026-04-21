@@ -6,9 +6,15 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Lucia Tomita - Psicóloga Clínica</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="version.js"></script>
 </head>
 <body>
     <header>
+        <!-- Botão para mudar de versão -->
+        <div id="version-switch">
+            <a href="indexBR.html" onclick="SiteVersion.switchPage(); return false;"><img src="images/switch.png" alt="Mudar para versão brasileira"></a>
+        </div>
+
         <!-- Botão Hambúrguer -->
         <div id="open-menu-btn"><img src="images/menu.svg" alt="Abrir Menu"></div>
 
@@ -384,6 +390,9 @@
 </body>
 </html>
 <script>
+    // Registra que o usuário está na versão JP
+    SiteVersion.set('JP');
+
     // Dinamizando o menu sanfona
     jQuery(".box .label").click(function(){ 
 	    if (jQuery(this).parent().hasClass("open")) {

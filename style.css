@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* RESOLUÇÕES PARA TESTAR 
+
+    PC
+    1024 x 768
+    1280 x 720
+    1366 x 768
+    1536 x 864
+    1600 x 900
+    1920 x 1080
+
+    MOBILE
+    360 x 640
+    360 x 800
+    393 x 873
+    412 x 892
+    412 x 915
+    414 x 896
+*/
+
 /* VARIÁVEIS */
 :root {
     --main-text-color: #116A63;
@@ -353,6 +372,76 @@ footer img { margin: 0 auto; width: 15vw; }
 
 #about p, #privacy p, #privacy li, #usage p, #usage table { font-size: medium; text-align: justify; }
 
+/* PÁGINA DE CONTATO */
+
+#contactpage { padding: 1rem 0; }
+
+#contactpage h1 {
+    padding: 0 var(--side-margin);
+    font-size: xx-large;
+    font-weight: 600;
+    margin: 0;
+    background-color: #D6FFFF;
+    border: 3px double #5CDFD4;
+}
+
+#contactpage h2 {
+    padding: 1rem 2.7rem 0 2.7rem;
+    font-size: large;
+    color: #000000;
+    text-align: justify;
+    margin-top: 0;
+}
+
+#contactpage a { text-decoration: none; }
+
+#contactpage button {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #25d366;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactpage img { width: 20px; filter: invert(100%); }
+
+/* FORMULÁRIO DE CONTATO */
+#contactform { padding: 0 2.7rem; display: flex; justify-content: center; margin-bottom: 2.7rem; }
+
+#contactform form { outline: solid 2px var(--main-text-color); outline-offset: 3px; border-radius: 5px; }
+
+#contactform * { margin: 5px; text-align: justify; }
+
+#contactform span { color: #c32a2a; }
+
+#contactform button { 
+    margin: 0 auto;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #2e6cd0;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#version-switch a {
+    display: flex;
+    text-align: left;
+    text-decoration: none;
+    position: absolute;
+}
+
+#version-switch img {
+    height: 1.7rem;
+}
+
 /* DESIGN RESPONSIVO  */
 
 @media (max-width: 600px) {
@@ -460,6 +549,11 @@ footer img { margin: 0 auto; width: 15vw; }
     #about { display: block; }
 
     #certification img { width: 100%; height: auto; }
+    
+    #contactform { padding: 0 .5rem; }
+    #contactpage h2 { padding: 0 var(--side-margin); }
+
+    #version-switch img { height: 1.8rem; }
 }
 
 @media (min-width: 601px) and (max-width: 1000px) {
@@ -507,7 +601,7 @@ footer img { margin: 0 auto; width: 15vw; }
     #hero h2 { font-size: 2.2vw; }
     #hero p { font-size: 1.3vw; }
     #hero p.jp { top: 40vh; }
-    #hero span { font-size: 1.1vw; }
+    #hero span { font-size: 1.5vw; }
     #hero-button h3 { font-size: 1.2vw; }
 
     h2 { font-size: 2vw; }
