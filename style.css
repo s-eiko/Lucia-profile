@@ -149,6 +149,7 @@ header nav a:hover { color: #D4AF37; }
     background-color: var(--highlight-color);
     bottom: 5px;
     width: 100%;
+    left: 0;
     text-align: center;
     font-size: small;
     font-weight: 500;
