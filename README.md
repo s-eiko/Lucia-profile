@@ -3,7 +3,7 @@
 ## Sobre
 
 Site profissional para divulgar o trabalho da psicóloga Lucia Tomita.
-Confira o resultado final em: luciatomita.com.br
+Acesse o resultado final em: luciatomita.com.br
 
 ## Ferramentas utilizadas
 
